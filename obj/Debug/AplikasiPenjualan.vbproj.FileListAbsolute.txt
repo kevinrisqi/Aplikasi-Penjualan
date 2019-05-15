@@ -25,4 +25,4 @@ G:\Project\AplikasiPenjualan\obj\Debug\AplikasiPenjualan.FormDashboard.resources
 G:\Project\AplikasiPenjualan\obj\Debug\AplikasiPenjualan.DetailBarang.resources
 G:\Project\AplikasiPenjualan\obj\Debug\AplikasiPenjualan.FormKategoriBarang.resources
 G:\Project\AplikasiPenjualan\obj\Debug\AplikasiPenjualan.vbprojResolveAssemblyReference.cache
-G:\Project\AplikasiPenjualan\obj\Debug\AplikasiPenjualan.Report.resources
+G:\Project\AplikasiPenjualan\obj\Debug\AplikasiPenjualan.Penjualan.resources

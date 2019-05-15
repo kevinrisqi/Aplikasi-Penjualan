@@ -129,4 +129,8 @@ Public Class MainForm
     Private Sub DashboardToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles DashboardToolStripMenuItem1.Click
         switchPanel(FormDashboard)
     End Sub
+
+    Private Sub btnLaporan_Click(sender As Object, e As EventArgs) Handles btnLaporan.Click
+        'bl
+    End Sub
 End Class
