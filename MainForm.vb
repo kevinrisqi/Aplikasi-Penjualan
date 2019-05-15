@@ -131,6 +131,6 @@ Public Class MainForm
     End Sub
 
     Private Sub btnLaporan_Click(sender As Object, e As EventArgs) Handles btnLaporan.Click
-        'bl
+        LapPenjualan.ShowDialog()
     End Sub
 End Class

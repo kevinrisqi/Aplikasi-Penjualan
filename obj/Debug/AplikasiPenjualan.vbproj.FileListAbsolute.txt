@@ -25,4 +25,10 @@ G:\Project\AplikasiPenjualan\obj\Debug\AplikasiPenjualan.FormDashboard.resources
 G:\Project\AplikasiPenjualan\obj\Debug\AplikasiPenjualan.DetailBarang.resources
 G:\Project\AplikasiPenjualan\obj\Debug\AplikasiPenjualan.FormKategoriBarang.resources
 G:\Project\AplikasiPenjualan\obj\Debug\AplikasiPenjualan.vbprojResolveAssemblyReference.cache
+<<<<<<< HEAD
 G:\Project\AplikasiPenjualan\obj\Debug\AplikasiPenjualan.Penjualan.resources
+=======
+>>>>>>> parent of cd3d58d... Membuat laporan penjualan gabungan
+G:\Project\AplikasiPenjualan\obj\Debug\AplikasiPenjualan.vbprojAssemblyReference.cache
+G:\Project\AplikasiPenjualan\obj\Debug\AplikasiPenjualan.vbproj.CoreCompileInputs.cache
+G:\Project\AplikasiPenjualan\obj\Debug\AplikasiPenjualan.LapPenjualan.resources
