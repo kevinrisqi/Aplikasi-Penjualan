@@ -32,7 +32,7 @@ Public Class FormDashboard
     Sub totalIncome()
         Call koneksi()
         Dim count As Integer
-        Cmd = New OdbcCommand("SELECT SUM(total_jual) AS TOTAL FROM penjualan WHERE tanggal = 'CURRENT_DATE()'", Conn)
+        Cmd = New OdbcCommand("SELECT SUM(total_jual) AS TOTAL FROM penjualan WHERE tanggal = CURRENT_DATE()", Conn)
         Rd = Cmd.ExecuteReader
         Rd.Read()
         If IsDBNull(Rd!TOTAL) Then
