@@ -47,7 +47,7 @@ Partial Class ListBarang
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
         Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(1002, 560)
+        Me.ShapeContainer1.Size = New System.Drawing.Size(1018, 599)
         Me.ShapeContainer1.TabIndex = 0
         Me.ShapeContainer1.TabStop = False
         '
@@ -92,7 +92,7 @@ Partial Class ListBarang
         Me.BunifuFlatButton1.IconVisible = True
         Me.BunifuFlatButton1.IconZoom = 50.0R
         Me.BunifuFlatButton1.IsTab = False
-        Me.BunifuFlatButton1.Location = New System.Drawing.Point(92, 128)
+        Me.BunifuFlatButton1.Location = New System.Drawing.Point(63, 128)
         Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
         Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(127, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.BunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(112, Byte), Integer))
@@ -118,7 +118,7 @@ Partial Class ListBarang
         Me.CrystalReportViewer1.ShowGroupTreeButton = False
         Me.CrystalReportViewer1.ShowLogo = False
         Me.CrystalReportViewer1.ShowParameterPanelButton = False
-        Me.CrystalReportViewer1.Size = New System.Drawing.Size(868, 375)
+        Me.CrystalReportViewer1.Size = New System.Drawing.Size(868, 414)
         Me.CrystalReportViewer1.TabIndex = 29
         Me.CrystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
@@ -127,7 +127,7 @@ Partial Class ListBarang
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1002, 560)
+        Me.ClientSize = New System.Drawing.Size(1018, 599)
         Me.Controls.Add(Me.CrystalReportViewer1)
         Me.Controls.Add(Me.BunifuFlatButton1)
         Me.Controls.Add(Me.Label9)
