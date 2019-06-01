@@ -17,7 +17,7 @@ Public Class ListBarang
         strPath = strPath.Substring(0, strPath.LastIndexOf("\"))
         strPath = strPath + "\"
         Dim rpt As New ReportDocument
-        Da = New OdbcDataAdapter("select id_barang from barang", Conn)
+        Da = New OdbcDataAdapter("CALL GetAllBarang()", Conn)
         Ds = New DataSet
         Da.Fill(Ds, "barang")
         rpt.Load(strPath + "\Reports\DaftarBarang.rpt")
