@@ -25,4 +25,8 @@ Public Class ListBarang
         CrystalReportViewer1.ReportSource = rpt
         CrystalReportViewer1.Refresh()
     End Sub
+
+    Private Sub BunifuFlatButton1_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton1.Click
+        MainForm.switchPanel(FormBarang)
+    End Sub
 End Class
