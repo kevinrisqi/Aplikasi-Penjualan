@@ -46,3 +46,25 @@ G:\Project\AplikasiKasir - Fail\AplikasiPenjualanV1\Aplikasi-Penjualan\obj\Debug
 G:\Project\AplikasiKasir - Fail\AplikasiPenjualanV1\Aplikasi-Penjualan\obj\Debug\AplikasiPenjualan.Resources.resources
 G:\Project\AplikasiKasir - Fail\AplikasiPenjualanV1\Aplikasi-Penjualan\obj\Debug\AplikasiPenjualan.vbproj.GenerateResource.Cache
 G:\Project\AplikasiKasir - Fail\AplikasiPenjualanV1\Aplikasi-Penjualan\obj\Debug\AplikasiPenjualan.FormLapPenjualanV1.resources
+C:\Aplikasi-Penjualan\bin\Debug\AplikasiPenjualan.exe.config
+C:\Aplikasi-Penjualan\obj\Debug\AplikasiPenjualan.exe
+C:\Aplikasi-Penjualan\obj\Debug\AplikasiPenjualan.xml
+C:\Aplikasi-Penjualan\obj\Debug\AplikasiPenjualan.pdb
+C:\Aplikasi-Penjualan\bin\Debug\AplikasiPenjualan.exe
+C:\Aplikasi-Penjualan\bin\Debug\AplikasiPenjualan.pdb
+C:\Aplikasi-Penjualan\bin\Debug\AplikasiPenjualan.xml
+C:\Aplikasi-Penjualan\obj\Debug\AplikasiPenjualan.vbprojResolveAssemblyReference.cache
+C:\Aplikasi-Penjualan\obj\Debug\AplikasiPenjualan.B_FormLogin.resources
+C:\Aplikasi-Penjualan\obj\Debug\AplikasiPenjualan.DetailBarang.resources
+C:\Aplikasi-Penjualan\obj\Debug\AplikasiPenjualan.FormAddBarang.resources
+C:\Aplikasi-Penjualan\obj\Debug\AplikasiPenjualan.FormBarang.resources
+C:\Aplikasi-Penjualan\obj\Debug\AplikasiPenjualan.FormDashboard.resources
+C:\Aplikasi-Penjualan\obj\Debug\AplikasiPenjualan.FormKategoriBarang.resources
+C:\Aplikasi-Penjualan\obj\Debug\AplikasiPenjualan.FormLapPenjualanV1.resources
+C:\Aplikasi-Penjualan\obj\Debug\AplikasiPenjualan.FormPenjualan.resources
+C:\Aplikasi-Penjualan\obj\Debug\AplikasiPenjualan.FormSetupToko.resources
+C:\Aplikasi-Penjualan\obj\Debug\AplikasiPenjualan.FormUserlist.resources
+C:\Aplikasi-Penjualan\obj\Debug\AplikasiPenjualan.ListBarang.resources
+C:\Aplikasi-Penjualan\obj\Debug\AplikasiPenjualan.MainForm.resources
+C:\Aplikasi-Penjualan\obj\Debug\AplikasiPenjualan.Resources.resources
+C:\Aplikasi-Penjualan\obj\Debug\AplikasiPenjualan.vbproj.GenerateResource.Cache
