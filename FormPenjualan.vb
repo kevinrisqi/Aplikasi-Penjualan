@@ -247,4 +247,8 @@ Public Class FormPenjualan
             End If
         End If
     End Sub
+
+    Private Sub namaKasir_TextChanged(sender As Object, e As EventArgs) Handles namaKasir.TextChanged
+
+    End Sub
 End Class
