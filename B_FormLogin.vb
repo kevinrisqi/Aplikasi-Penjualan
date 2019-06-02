@@ -30,6 +30,12 @@ Public Class B_FormLogin
         MainForm.btnLaporan.Enabled = True
         MainForm.btnSetup.Enabled = True
         MainForm.btnDashboard.Enabled = True
+        MainForm.BarangToolStripMenuItem.Enabled = True
+        MainForm.UserToolStripMenuItem.Enabled = True
+        MainForm.DashboardToolStripMenuItem1.Enabled = True
+        MainForm.PenjualanToolStripMenuItem1.Enabled = True
+        MainForm.LaporanToolStripMenuItem.Enabled = True
+        MainForm.SetupToolStripMenuItem.Enabled = True
         MainForm.lblLevel.Visible = True
     End Sub
 
@@ -40,6 +46,12 @@ Public Class B_FormLogin
         MainForm.btnLaporan.Enabled = True
         MainForm.btnSetup.Enabled = True
         MainForm.btnDashboard.Enabled = True
+        MainForm.BarangToolStripMenuItem.Enabled = True
+        MainForm.UserToolStripMenuItem.Enabled = False
+        MainForm.DashboardToolStripMenuItem1.Enabled = True
+        MainForm.PenjualanToolStripMenuItem1.Enabled = True
+        MainForm.LaporanToolStripMenuItem.Enabled = True
+        MainForm.SetupToolStripMenuItem.Enabled = True
         MainForm.lblLevel.Visible = True
     End Sub
 

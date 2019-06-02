@@ -185,6 +185,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Reports\DaftarBarang.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DaftarBarang.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Reports\LaporanBulanan.vb">
       <DependentUpon>LaporanBulanan.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -202,12 +208,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LaporanHarian.rpt</DependentUpon>
       <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Reports\ListBarang.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ListBarang.rpt</DependentUpon>
-      <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -253,6 +253,10 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DaftarBarang.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DaftarBarang.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\LaporanBulanan.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>LaporanBulanan.vb</LastGenOutput>
@@ -264,10 +268,6 @@
     <EmbeddedResource Include="Reports\LaporanHarian.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>LaporanHarian.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\ListBarang.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>ListBarang.vb</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

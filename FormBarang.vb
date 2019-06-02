@@ -137,4 +137,9 @@ Public Class FormBarang
     Private Sub BunifuCustomDataGrid1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles BunifuCustomDataGrid1.CellContentClick
 
     End Sub
+
+    Private Sub BunifuFlatButton3_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton3.Click
+        switchPanel(ListBarang)
+        Call ListBarang.listBarang()
+    End Sub
 End Class
