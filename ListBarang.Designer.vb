@@ -88,7 +88,7 @@ Partial Class ListBarang
         Me.BunifuFlatButton1.IconMarginLeft = 0
         Me.BunifuFlatButton1.IconMarginRight = 0
         Me.BunifuFlatButton1.IconRightVisible = True
-        Me.BunifuFlatButton1.IconRightZoom = 0.0R
+        Me.BunifuFlatButton1.IconRightZoom = 0R
         Me.BunifuFlatButton1.IconVisible = True
         Me.BunifuFlatButton1.IconZoom = 50.0R
         Me.BunifuFlatButton1.IsTab = False
@@ -142,9 +142,9 @@ Partial Class ListBarang
 
     End Sub
     Private WithEvents LineShape1 As Microsoft.VisualBasic.PowerPacks.LineShape
-    Friend WithEvents ShapeContainer1 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents BunifuFlatButton1 As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents CrystalReportViewer1 As CrystalDecisions.Windows.Forms.CrystalReportViewer
+    Private WithEvents ShapeContainer1 As PowerPacks.ShapeContainer
 End Class

@@ -157,6 +157,12 @@
     <Compile Include="FormUserlist.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="KoreksiStok.Designer.vb">
+      <DependentUpon>KoreksiStok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="KoreksiStok.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ListBarang.Designer.vb">
       <DependentUpon>ListBarang.vb</DependentUpon>
     </Compile>
@@ -240,6 +246,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormUserlist.resx">
       <DependentUpon>FormUserlist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KoreksiStok.resx">
+      <DependentUpon>KoreksiStok.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListBarang.resx">
       <DependentUpon>ListBarang.vb</DependentUpon>
@@ -409,6 +418,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\create_new_128px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_96px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

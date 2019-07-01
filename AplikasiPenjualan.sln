@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AplikasiPenjualan", "AplikasiPenjualan.vbproj", "{1FE75871-F622-4CF8-A31A-4106DC0CE875}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Point Of Sale", "Point Of Sale\Point Of Sale.vdproj", "{AA015B1D-9756-446D-B9BE-4E3FC1F698DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,8 +15,13 @@ Global
 		{1FE75871-F622-4CF8-A31A-4106DC0CE875}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FE75871-F622-4CF8-A31A-4106DC0CE875}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FE75871-F622-4CF8-A31A-4106DC0CE875}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA015B1D-9756-446D-B9BE-4E3FC1F698DC}.Debug|Any CPU.ActiveCfg = Debug
+		{AA015B1D-9756-446D-B9BE-4E3FC1F698DC}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA21536D-7B58-4217-B9CD-D37D8B888198}
 	EndGlobalSection
 EndGlobal

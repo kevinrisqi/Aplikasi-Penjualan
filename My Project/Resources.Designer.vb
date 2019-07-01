@@ -73,6 +73,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property arrow_96px() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("arrow_96px", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property available_updates_40px() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("available_updates_40px", resourceCulture)
@@ -166,6 +176,26 @@ Namespace My.Resources
         Friend ReadOnly Property conference_background_selected_80px() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("conference_background_selected_80px", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property create_new_128px() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("create_new_128px", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property create_new_128px1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("create_new_128px1", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

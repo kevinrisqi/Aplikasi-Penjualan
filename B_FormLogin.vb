@@ -26,6 +26,7 @@ Public Class B_FormLogin
     Sub adminActive()
         MainForm.btnBarang.Enabled = True
         MainForm.btnUser.Enabled = True
+        MainForm.btnKoreksi.Enabled = True
         MainForm.btnPenjualan.Enabled = True
         MainForm.btnLaporan.Enabled = True
         MainForm.btnSetup.Enabled = True

@@ -20,7 +20,7 @@ Public Class ListBarang
         Da = New OdbcDataAdapter("CALL GetAllBarang()", Conn)
         Ds = New DataSet
         Da.Fill(Ds, "barang")
-        rpt.Load(strPath + "\Reports\DaftarBarang.rpt")
+        rpt.Load(strPath + "\Zenai Software\Point Of Sale\Reports\DaftarBarang.rpt")
         rpt.SetDataSource(Ds.Tables(0))
         CrystalReportViewer1.ReportSource = rpt
         CrystalReportViewer1.Refresh()

@@ -153,4 +153,8 @@ Public Class MainForm
     Private Sub btnLaporan_Click(sender As Object, e As EventArgs) Handles btnLaporan.Click
         switchPanel(FormLapPenjualanV1)
     End Sub
+
+    Private Sub BunifuFlatButton2_Click(sender As Object, e As EventArgs) Handles btnKoreksi.Click
+        switchPanel(KoreksiStok)
+    End Sub
 End Class
