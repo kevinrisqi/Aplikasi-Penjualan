@@ -33,21 +33,23 @@ Partial Class KoreksiStok
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.BunifuCustomDataGrid1 = New Bunifu.Framework.UI.BunifuCustomDataGrid()
-        Me.BunifuCustomDataGrid2 = New Bunifu.Framework.UI.BunifuCustomDataGrid()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.BunifuCustomDataGrid2 = New Bunifu.Framework.UI.BunifuCustomDataGrid()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.search = New Bunifu.Framework.UI.BunifuTextbox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.R_ID = New System.Windows.Forms.RadioButton()
         Me.R_Tanggal = New System.Windows.Forms.RadioButton()
         Me.R_Keterangan = New System.Windows.Forms.RadioButton()
+        Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.BunifuFlatButton4 = New Bunifu.Framework.UI.BunifuFlatButton()
         CType(Me.BunifuCustomDataGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuCustomDataGrid2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -126,6 +128,32 @@ Partial Class KoreksiStok
         Me.BunifuCustomDataGrid1.Size = New System.Drawing.Size(466, 400)
         Me.BunifuCustomDataGrid1.TabIndex = 38
         '
+        'Column1
+        '
+        Me.Column1.DataPropertyName = "id"
+        Me.Column1.HeaderText = "ID"
+        Me.Column1.Name = "Column1"
+        Me.Column1.Width = 50
+        '
+        'Column2
+        '
+        Me.Column2.DataPropertyName = "tanggal"
+        Me.Column2.HeaderText = "Tanggal"
+        Me.Column2.Name = "Column2"
+        '
+        'Column3
+        '
+        Me.Column3.DataPropertyName = "admin"
+        Me.Column3.HeaderText = "Petugas"
+        Me.Column3.Name = "Column3"
+        '
+        'Column4
+        '
+        Me.Column4.DataPropertyName = "keterangan"
+        Me.Column4.HeaderText = "Keterangan"
+        Me.Column4.Name = "Column4"
+        Me.Column4.Width = 215
+        '
         'BunifuCustomDataGrid2
         '
         Me.BunifuCustomDataGrid2.AllowUserToAddRows = False
@@ -168,26 +196,6 @@ Partial Class KoreksiStok
         Me.BunifuCustomDataGrid2.Size = New System.Drawing.Size(412, 400)
         Me.BunifuCustomDataGrid2.TabIndex = 39
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.AplikasiPenjualan.My.Resources.Resources.arrow_96px
-        Me.PictureBox2.Location = New System.Drawing.Point(510, 283)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(38, 40)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 40
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.AplikasiPenjualan.My.Resources.Resources.create_new_128px1
-        Me.PictureBox1.Location = New System.Drawing.Point(85, 31)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(60, 60)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 26
-        Me.PictureBox1.TabStop = False
-        '
         'Column5
         '
         Me.Column5.HeaderText = "Nama Barang"
@@ -207,31 +215,25 @@ Partial Class KoreksiStok
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         Me.DataGridViewTextBoxColumn2.Width = 112
         '
-        'Column1
+        'PictureBox2
         '
-        Me.Column1.DataPropertyName = "id"
-        Me.Column1.HeaderText = "ID"
-        Me.Column1.Name = "Column1"
-        Me.Column1.Width = 50
+        Me.PictureBox2.Image = Global.AplikasiPenjualan.My.Resources.Resources.arrow_96px
+        Me.PictureBox2.Location = New System.Drawing.Point(510, 283)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(38, 40)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 40
+        Me.PictureBox2.TabStop = False
         '
-        'Column2
+        'PictureBox1
         '
-        Me.Column2.DataPropertyName = "tanggal"
-        Me.Column2.HeaderText = "Tanggal"
-        Me.Column2.Name = "Column2"
-        '
-        'Column3
-        '
-        Me.Column3.DataPropertyName = "admin"
-        Me.Column3.HeaderText = "Petugas"
-        Me.Column3.Name = "Column3"
-        '
-        'Column4
-        '
-        Me.Column4.DataPropertyName = "keterangan"
-        Me.Column4.HeaderText = "Keterangan"
-        Me.Column4.Name = "Column4"
-        Me.Column4.Width = 215
+        Me.PictureBox1.Image = Global.AplikasiPenjualan.My.Resources.Resources.create_new_128px1
+        Me.PictureBox1.Location = New System.Drawing.Point(85, 31)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(60, 60)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 26
+        Me.PictureBox1.TabStop = False
         '
         'search
         '
@@ -289,12 +291,82 @@ Partial Class KoreksiStok
         Me.R_Keterangan.Text = "Keterangan"
         Me.R_Keterangan.UseVisualStyleBackColor = True
         '
+        'BunifuFlatButton1
+        '
+        Me.BunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.BunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(127, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.BunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuFlatButton1.BorderRadius = 0
+        Me.BunifuFlatButton1.ButtonText = "Tambah Stok"
+        Me.BunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray
+        Me.BunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent
+        Me.BunifuFlatButton1.Iconimage = Global.AplikasiPenjualan.My.Resources.Resources.box_edit_1_100px
+        Me.BunifuFlatButton1.Iconimage_right = Nothing
+        Me.BunifuFlatButton1.Iconimage_right_Selected = Nothing
+        Me.BunifuFlatButton1.Iconimage_Selected = Nothing
+        Me.BunifuFlatButton1.IconMarginLeft = 0
+        Me.BunifuFlatButton1.IconMarginRight = 0
+        Me.BunifuFlatButton1.IconRightVisible = True
+        Me.BunifuFlatButton1.IconRightZoom = 0.0R
+        Me.BunifuFlatButton1.IconVisible = True
+        Me.BunifuFlatButton1.IconZoom = 90.0R
+        Me.BunifuFlatButton1.IsTab = False
+        Me.BunifuFlatButton1.Location = New System.Drawing.Point(721, 539)
+        Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
+        Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(127, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.BunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.BunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White
+        Me.BunifuFlatButton1.selected = False
+        Me.BunifuFlatButton1.Size = New System.Drawing.Size(130, 48)
+        Me.BunifuFlatButton1.TabIndex = 46
+        Me.BunifuFlatButton1.Text = "Tambah Stok"
+        Me.BunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BunifuFlatButton1.Textcolor = System.Drawing.Color.White
+        Me.BunifuFlatButton1.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
+        'BunifuFlatButton4
+        '
+        Me.BunifuFlatButton4.Activecolor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.BunifuFlatButton4.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.BunifuFlatButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuFlatButton4.BorderRadius = 0
+        Me.BunifuFlatButton4.ButtonText = "Hapus"
+        Me.BunifuFlatButton4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuFlatButton4.DisabledColor = System.Drawing.Color.Gray
+        Me.BunifuFlatButton4.Iconcolor = System.Drawing.Color.Transparent
+        Me.BunifuFlatButton4.Iconimage = Global.AplikasiPenjualan.My.Resources.Resources.full_trash_64px
+        Me.BunifuFlatButton4.Iconimage_right = Nothing
+        Me.BunifuFlatButton4.Iconimage_right_Selected = Nothing
+        Me.BunifuFlatButton4.Iconimage_Selected = Nothing
+        Me.BunifuFlatButton4.IconMarginLeft = 0
+        Me.BunifuFlatButton4.IconMarginRight = 0
+        Me.BunifuFlatButton4.IconRightVisible = True
+        Me.BunifuFlatButton4.IconRightZoom = 0.0R
+        Me.BunifuFlatButton4.IconVisible = True
+        Me.BunifuFlatButton4.IconZoom = 59.0R
+        Me.BunifuFlatButton4.IsTab = False
+        Me.BunifuFlatButton4.Location = New System.Drawing.Point(862, 539)
+        Me.BunifuFlatButton4.Name = "BunifuFlatButton4"
+        Me.BunifuFlatButton4.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.BunifuFlatButton4.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(156, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(35, Byte), Integer))
+        Me.BunifuFlatButton4.OnHoverTextColor = System.Drawing.Color.White
+        Me.BunifuFlatButton4.selected = False
+        Me.BunifuFlatButton4.Size = New System.Drawing.Size(104, 48)
+        Me.BunifuFlatButton4.TabIndex = 50
+        Me.BunifuFlatButton4.Text = "Hapus"
+        Me.BunifuFlatButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BunifuFlatButton4.Textcolor = System.Drawing.Color.White
+        Me.BunifuFlatButton4.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
         'KoreksiStok
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1018, 599)
+        Me.Controls.Add(Me.BunifuFlatButton1)
+        Me.Controls.Add(Me.BunifuFlatButton4)
         Me.Controls.Add(Me.R_Keterangan)
         Me.Controls.Add(Me.R_Tanggal)
         Me.Controls.Add(Me.R_ID)
@@ -336,4 +408,6 @@ Partial Class KoreksiStok
     Friend WithEvents R_ID As System.Windows.Forms.RadioButton
     Friend WithEvents R_Tanggal As System.Windows.Forms.RadioButton
     Friend WithEvents R_Keterangan As System.Windows.Forms.RadioButton
+    Friend WithEvents BunifuFlatButton1 As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents BunifuFlatButton4 As Bunifu.Framework.UI.BunifuFlatButton
 End Class
