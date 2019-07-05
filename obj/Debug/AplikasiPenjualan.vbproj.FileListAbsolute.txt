@@ -91,3 +91,4 @@ C:\Aplikasi-Penjualan\Aplikasi-Penjualan\obj\Debug\AplikasiPenjualan.Resources.r
 C:\Aplikasi-Penjualan\Aplikasi-Penjualan\obj\Debug\AplikasiPenjualan.vbproj.GenerateResource.cache
 C:\Aplikasi-Penjualan\Aplikasi-Penjualan\obj\Debug\AplikasiPenjualan.vbprojResolveAssemblyReference.cache
 C:\Aplikasi-Penjualan\Aplikasi-Penjualan\obj\Debug\AplikasiPenjualan.KoreksiStok.resources
+C:\Aplikasi-Penjualan\Aplikasi-Penjualan\obj\Debug\AplikasiPenjualan.TambahStok.resources

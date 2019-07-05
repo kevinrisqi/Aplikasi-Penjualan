@@ -103,6 +103,12 @@
     <Compile Include="B_FormLogin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="KoreksiBarang.Designer.vb">
+      <DependentUpon>KoreksiBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="KoreksiBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DetailBarang.Designer.vb">
       <DependentUpon>DetailBarang.vb</DependentUpon>
     </Compile>
@@ -225,6 +231,9 @@
   <ItemGroup>
     <EmbeddedResource Include="B_FormLogin.resx">
       <DependentUpon>B_FormLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KoreksiBarang.resx">
+      <DependentUpon>KoreksiBarang.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DetailBarang.resx">
       <DependentUpon>DetailBarang.vb</DependentUpon>

@@ -22,6 +22,7 @@ Partial Class TambahStok
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -53,6 +54,7 @@ Partial Class TambahStok
         Me.BunifuFlatButton4 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton2 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton3 = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuImageButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuCustomDataGrid2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -145,6 +147,7 @@ Partial Class TambahStok
         '
         'IDTrans
         '
+        Me.IDTrans.Enabled = False
         Me.IDTrans.Location = New System.Drawing.Point(170, 128)
         Me.IDTrans.Name = "IDTrans"
         Me.IDTrans.Size = New System.Drawing.Size(58, 20)
@@ -153,6 +156,7 @@ Partial Class TambahStok
         'kodebarang
         '
         Me.kodebarang.Location = New System.Drawing.Point(170, 173)
+        Me.kodebarang.MaxLength = 10
         Me.kodebarang.Name = "kodebarang"
         Me.kodebarang.Size = New System.Drawing.Size(106, 20)
         Me.kodebarang.TabIndex = 36
@@ -160,19 +164,22 @@ Partial Class TambahStok
         'keterangan
         '
         Me.keterangan.Location = New System.Drawing.Point(170, 212)
+        Me.keterangan.MaxLength = 200
         Me.keterangan.Name = "keterangan"
         Me.keterangan.Size = New System.Drawing.Size(483, 20)
         Me.keterangan.TabIndex = 37
         '
         'tanggal
         '
+        Me.tanggal.Enabled = False
         Me.tanggal.Location = New System.Drawing.Point(374, 128)
         Me.tanggal.Name = "tanggal"
-        Me.tanggal.Size = New System.Drawing.Size(97, 20)
+        Me.tanggal.Size = New System.Drawing.Size(75, 20)
         Me.tanggal.TabIndex = 38
         '
         'petugas
         '
+        Me.petugas.Enabled = False
         Me.petugas.Location = New System.Drawing.Point(566, 128)
         Me.petugas.Name = "petugas"
         Me.petugas.Size = New System.Drawing.Size(87, 20)
@@ -198,6 +205,7 @@ Partial Class TambahStok
         '
         'oldstock
         '
+        Me.oldstock.Enabled = False
         Me.oldstock.Location = New System.Drawing.Point(374, 173)
         Me.oldstock.Name = "oldstock"
         Me.oldstock.Size = New System.Drawing.Size(45, 20)
@@ -206,6 +214,7 @@ Partial Class TambahStok
         'newstock
         '
         Me.newstock.Location = New System.Drawing.Point(566, 173)
+        Me.newstock.MaxLength = 6
         Me.newstock.Name = "newstock"
         Me.newstock.Size = New System.Drawing.Size(45, 20)
         Me.newstock.TabIndex = 43
@@ -378,7 +387,7 @@ Partial Class TambahStok
         Me.BunifuFlatButton2.IconRightVisible = True
         Me.BunifuFlatButton2.IconRightZoom = 0.0R
         Me.BunifuFlatButton2.IconVisible = True
-        Me.BunifuFlatButton2.IconZoom = 90.0R
+        Me.BunifuFlatButton2.IconZoom = 70.0R
         Me.BunifuFlatButton2.IsTab = False
         Me.BunifuFlatButton2.Location = New System.Drawing.Point(692, 481)
         Me.BunifuFlatButton2.Name = "BunifuFlatButton2"
@@ -426,6 +435,10 @@ Partial Class TambahStok
         Me.BunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BunifuFlatButton3.Textcolor = System.Drawing.Color.White
         Me.BunifuFlatButton3.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
+        'Timer1
+        '
+        Me.Timer1.Enabled = True
         '
         'TambahStok
         '
@@ -494,4 +507,5 @@ Partial Class TambahStok
     Friend WithEvents BunifuFlatButton4 As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents BunifuFlatButton2 As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents BunifuFlatButton3 As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
 End Class
