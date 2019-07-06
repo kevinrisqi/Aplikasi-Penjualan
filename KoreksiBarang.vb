@@ -65,6 +65,7 @@ Public Class KoreksiBarang
         i = BunifuCustomDataGrid1.CurrentRow.Index
 
         TambahStok.kodebarang.Text = BunifuCustomDataGrid1.Item(1, i).Value
+        TambahStok.namaBarang = BunifuCustomDataGrid1.Item(2, i).Value
         TambahStok.oldstock.Text = BunifuCustomDataGrid1.Item(5, i).Value
         Me.Dispose()
         TambahStok.kodebarang.Focus()
