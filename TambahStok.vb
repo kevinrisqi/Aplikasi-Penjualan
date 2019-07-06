@@ -46,7 +46,11 @@ Public Class TambahStok
     End Sub
 
     Sub tambahStok()
-        BunifuCustomDataGrid2.Rows.Add(New String() {namaBarang, oldstock.Text, Val(newstock.Text) + Val(oldstock.Text)})
+        If Val(newstock.Text) + Val(oldstock.Text) < 0 Then
+            MsgBox("Stok tidak boleh kurang dari 0 !", vbInformation)
+        Else
+            BunifuCustomDataGrid2.Rows.Add(New String() {namaBarang, oldstock.Text, Val(newstock.Text) + Val(oldstock.Text)})
+        End If
     End Sub
 
     Private Sub newstock_KeyPress(sender As Object, e As KeyPressEventArgs) Handles newstock.KeyPress
