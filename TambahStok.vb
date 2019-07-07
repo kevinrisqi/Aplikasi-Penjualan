@@ -2,6 +2,7 @@
 Public Class TambahStok
 
     Public namaBarang As String
+    Public jam As String
 
     Private Sub TambahStok_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call loadTambahStok()
@@ -15,6 +16,7 @@ Public Class TambahStok
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         tanggal.Text = DateTime.Now.ToString("yyyy-MM-dd")
+        jam = DateTime.Now.ToString("hh:mm:ss")
     End Sub
 
     Sub kodeOtomatis()
@@ -53,6 +55,19 @@ Public Class TambahStok
         End If
     End Sub
 
+    Sub simpanStok()
+        If BunifuCustomDataGrid2.Rows.Count = 0 Then
+            MsgBox("Data masih kosong, silahkan isi data terlebih dahulu !", vbInformation)
+        Else
+            'Cmd = New OdbcCommand("INSERT INTO koreksi_stok (id) VALUES ('"& IDTrans.Text &"')")
+            For baris As Integer = 0 To BunifuCustomDataGrid2.Rows.Count - 1
+                Cmd = New OdbcCommand("INSERT INTO koreksi_stok (id,tanggal,jam,admin,keterangan,nama_barang,stok_lama,stok_sekarang) VALUES ('" & IDTrans.Text & "','" & tanggal.Text & "','" & jam & "','" & petugas.Text & "','" & keterangan.Text & "','" & BunifuCustomDataGrid2.Rows(baris).Cells(0).Value & "','" & BunifuCustomDataGrid2.Rows(baris).Cells(1).Value & "','" & BunifuCustomDataGrid2.Rows(baris).Cells(2).Value & "')", Conn)
+                Cmd.ExecuteNonQuery()
+            Next
+        End If
+    End Sub
+
+
     Private Sub newstock_KeyPress(sender As Object, e As KeyPressEventArgs) Handles newstock.KeyPress
         If Not ((e.KeyChar >= "0" And e.KeyChar <= "9") Or e.KeyChar = vbBack Or e.KeyChar = "-") Then e.Handled = True
     End Sub
@@ -82,5 +97,9 @@ Public Class TambahStok
         Else
             MsgBox("Silahkan pilih satu baris data yang akan dihapus !", vbInformation)
         End If
+    End Sub
+
+    Private Sub BunifuFlatButton2_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton2.Click
+        Call simpanStok()
     End Sub
 End Class
