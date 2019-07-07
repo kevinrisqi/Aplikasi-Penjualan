@@ -74,4 +74,13 @@ Public Class TambahStok
     Private Sub kodebarang_TextChanged(sender As Object, e As EventArgs) Handles kodebarang.TextChanged
 
     End Sub
+
+    Private Sub BunifuFlatButton3_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton3.Click
+        If BunifuCustomDataGrid2.SelectedRows.Count > 0 Then
+            'MsgBox("Data tersedia", vbInformation)
+            BunifuCustomDataGrid2.Rows.Remove(BunifuCustomDataGrid2.SelectedRows(0))
+        Else
+            MsgBox("Silahkan pilih satu baris data yang akan dihapus !", vbInformation)
+        End If
+    End Sub
 End Class
