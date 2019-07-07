@@ -11,6 +11,7 @@ Public Class TambahStok
     Sub loadTambahStok()
         Call kodeOtomatis()
         kodebarang.Text = ""
+        kodebarang.Focus()
         oldstock.Text = 0
         newstock.Text = 0
         keterangan.Text = ""
@@ -26,7 +27,7 @@ Public Class TambahStok
 
     Sub kodeOtomatis()
         Call koneksi()
-        Cmd = New OdbcCommand("select * from koreksi_stok where id in (select max(id) from koreksi_stok)", Conn)
+        Cmd = New OdbcCommand("select id from koreksi_stok where id in (select max(id) from koreksi_stok)", Conn)
         Dim urutan As String
         Dim hitung As Long
         Rd = Cmd.ExecuteReader
