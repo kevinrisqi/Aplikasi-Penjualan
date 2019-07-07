@@ -6,10 +6,15 @@ Public Class TambahStok
 
     Private Sub TambahStok_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call loadTambahStok()
-        Call kodeOtomatis()
     End Sub
 
     Sub loadTambahStok()
+        Call kodeOtomatis()
+        kodebarang.Text = ""
+        oldstock.Text = 0
+        newstock.Text = 0
+        keterangan.Text = ""
+        BunifuCustomDataGrid2.Rows.Clear()
         petugas.Text = MainForm.btnLogin.Text
         newstock.Text = 0
     End Sub
@@ -64,6 +69,7 @@ Public Class TambahStok
                 Cmd = New OdbcCommand("INSERT INTO koreksi_stok (id,tanggal,jam,admin,keterangan,nama_barang,stok_lama,stok_sekarang) VALUES ('" & IDTrans.Text & "','" & tanggal.Text & "','" & jam & "','" & petugas.Text & "','" & keterangan.Text & "','" & BunifuCustomDataGrid2.Rows(baris).Cells(0).Value & "','" & BunifuCustomDataGrid2.Rows(baris).Cells(1).Value & "','" & BunifuCustomDataGrid2.Rows(baris).Cells(2).Value & "')", Conn)
                 Cmd.ExecuteNonQuery()
             Next
+            Call loadTambahStok()
         End If
     End Sub
 
