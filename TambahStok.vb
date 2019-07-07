@@ -67,6 +67,8 @@ Public Class TambahStok
         Else
             'Cmd = New OdbcCommand("INSERT INTO koreksi_stok (id) VALUES ('"& IDTrans.Text &"')")
             For baris As Integer = 0 To BunifuCustomDataGrid2.Rows.Count - 1
+                Cmd = New OdbcCommand("UPDATE barang set stok='" & BunifuCustomDataGrid2.Rows(baris).Cells(2).Value & "' WHERE nama_barang='" & BunifuCustomDataGrid2.Rows(baris).Cells(0).Value & "' AND stok='" & BunifuCustomDataGrid2.Rows(baris).Cells(1).Value & "'", Conn)
+                Cmd.ExecuteNonQuery()
                 Cmd = New OdbcCommand("INSERT INTO koreksi_stok (id,tanggal,jam,admin,keterangan,nama_barang,stok_lama,stok_sekarang) VALUES ('" & IDTrans.Text & "','" & tanggal.Text & "','" & jam & "','" & petugas.Text & "','" & keterangan.Text & "','" & BunifuCustomDataGrid2.Rows(baris).Cells(0).Value & "','" & BunifuCustomDataGrid2.Rows(baris).Cells(1).Value & "','" & BunifuCustomDataGrid2.Rows(baris).Cells(2).Value & "')", Conn)
                 Cmd.ExecuteNonQuery()
             Next
