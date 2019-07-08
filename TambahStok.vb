@@ -67,12 +67,22 @@ Public Class TambahStok
         Else
             'Cmd = New OdbcCommand("INSERT INTO koreksi_stok (id) VALUES ('"& IDTrans.Text &"')")
             For baris As Integer = 0 To BunifuCustomDataGrid2.Rows.Count - 1
-                Cmd = New OdbcCommand("UPDATE barang set stok='" & BunifuCustomDataGrid2.Rows(baris).Cells(2).Value & "' WHERE nama_barang='" & BunifuCustomDataGrid2.Rows(baris).Cells(0).Value & "' AND stok='" & BunifuCustomDataGrid2.Rows(baris).Cells(1).Value & "'", Conn)
-                Cmd.ExecuteNonQuery()
-                Cmd = New OdbcCommand("INSERT INTO koreksi_stok (id,tanggal,jam,admin,keterangan,nama_barang,stok_lama,stok_sekarang) VALUES ('" & IDTrans.Text & "','" & tanggal.Text & "','" & jam & "','" & petugas.Text & "','" & keterangan.Text & "','" & BunifuCustomDataGrid2.Rows(baris).Cells(0).Value & "','" & BunifuCustomDataGrid2.Rows(baris).Cells(1).Value & "','" & BunifuCustomDataGrid2.Rows(baris).Cells(2).Value & "')", Conn)
-                Cmd.ExecuteNonQuery()
+                If BunifuCustomDataGrid2.Rows(baris).Cells(0).Value = "" Then
+                    MsgBox("Terdapat nama barang yang kosong !", vbInformation)
+                Else
+                    Cmd = New OdbcCommand("UPDATE barang set stok='" & BunifuCustomDataGrid2.Rows(baris).Cells(2).Value & "' WHERE nama_barang='" & BunifuCustomDataGrid2.Rows(baris).Cells(0).Value & "' AND stok='" & BunifuCustomDataGrid2.Rows(baris).Cells(1).Value & "'", Conn)
+                    Cmd.ExecuteNonQuery()
+                    Cmd = New OdbcCommand("INSERT INTO koreksi_stok (id,tanggal,jam,admin,keterangan,nama_barang,stok_lama,stok_sekarang) VALUES ('" & IDTrans.Text & "','" & tanggal.Text & "','" & jam & "','" & petugas.Text & "','" & keterangan.Text & "','" & BunifuCustomDataGrid2.Rows(baris).Cells(0).Value & "','" & BunifuCustomDataGrid2.Rows(baris).Cells(1).Value & "','" & BunifuCustomDataGrid2.Rows(baris).Cells(2).Value & "')", Conn)
+                    Cmd.ExecuteNonQuery()
+                End If
             Next
             Call loadTambahStok()
+        End If
+    End Sub
+
+    Private Sub newstock_KeyDown(sender As Object, e As KeyEventArgs) Handles newstock.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            Call tambahStok()
         End If
     End Sub
 
@@ -109,6 +119,20 @@ Public Class TambahStok
     End Sub
 
     Private Sub BunifuFlatButton2_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton2.Click
-        Call simpanStok()
+        If keterangan.Text = "" Then
+            MsgBox("Silahkan isi keterangan terlebih dahulu !", vbInformation)
+        Else
+            Call simpanStok()
+        End If
+    End Sub
+
+    Private Sub newstock_MouseLeave(sender As Object, e As EventArgs) Handles newstock.MouseLeave
+        If newstock.Text = "" Then
+            newstock.Text = 0
+        End If
+    End Sub
+
+    Private Sub newstock_TextChanged(sender As Object, e As EventArgs) Handles newstock.TextChanged
+
     End Sub
 End Class
