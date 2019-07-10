@@ -6,8 +6,8 @@ Public Class KoreksiStok
         Dim kodeStok As String
         i = BunifuCustomDataGrid1.CurrentRow.Index
 
-        kodeStok = BunifuCustomDataGrid1.Item(1, i).Value
-        'MsgBox(BunifuCustomDataGrid1.Item(0, i).Value, vbInformation)
+        kodeStok = BunifuCustomDataGrid1.Item(0, i).Value
+        'search.text = BunifuCustomDataGrid1.Item(0, i).Value
         Call koneksi()
         Da = New OdbcDataAdapter("SELECT nama_barang,stok_lama,stok_sekarang FROM koreksi_stok WHERE id='" & kodeStok & "'", Conn)
         Ds = New DataSet
@@ -23,7 +23,7 @@ Public Class KoreksiStok
 
     Sub tampilData()
         Call koneksi()
-        Da = New OdbcDataAdapter("SELECT id,tanggal,jam,keterangan FROM koreksi_stok GROUP BY id ORDER BY tanggal DESC", Conn)
+        Da = New OdbcDataAdapter("SELECT id,tanggal,jam,keterangan,admin FROM koreksi_stok GROUP BY id ORDER BY tanggal DESC", Conn)
         Ds = New DataSet
         Da.Fill(Ds, "kr")
         BunifuCustomDataGrid1.DataSource = Ds.Tables("kr")
@@ -33,13 +33,13 @@ Public Class KoreksiStok
 
     Sub searchData()
         Call koneksi()
-        Dim searchData As String = "SELECT id,tanggal,jam,keterangan FROM koreksi_stok where id like '%" & search.text & "%' GROUP BY id ORDER BY tanggal DESC"
+        Dim searchData As String = "SELECT id,tanggal,jam,keterangan,admin FROM koreksi_stok where id like '%" & search.text & "%' GROUP BY id ORDER BY tanggal DESC"
         Cmd = New OdbcCommand(searchData, Conn)
         Rd = Cmd.ExecuteReader
         Rd.Read()
         If Rd.HasRows Then
             Call koneksi()
-            Dim query As String = "SELECT id,tanggal,jam,keterangan FROM koreksi_stok where id like '%" & search.text & "%' GROUP BY id ORDER BY tanggal DESC"
+            Dim query As String = "SELECT id,tanggal,jam,keterangan,admin FROM koreksi_stok where id like '%" & search.text & "%' GROUP BY id ORDER BY tanggal DESC"
             Da = New OdbcDataAdapter(query, Conn)
             Ds = New DataSet
             Da.Fill(Ds)
@@ -51,4 +51,6 @@ Public Class KoreksiStok
     Private Sub search_OnTextChange(sender As Object, e As EventArgs) Handles search.OnTextChange
         Call searchData()
     End Sub
+
+
 End Class
