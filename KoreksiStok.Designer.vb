@@ -39,9 +39,6 @@ Partial Class KoreksiStok
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.BunifuCustomDataGrid2 = New Bunifu.Framework.UI.BunifuCustomDataGrid()
-        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.search = New Bunifu.Framework.UI.BunifuTextbox()
@@ -51,7 +48,9 @@ Partial Class KoreksiStok
         Me.R_Keterangan = New System.Windows.Forms.RadioButton()
         Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton4 = New Bunifu.Framework.UI.BunifuFlatButton()
-        Me.kodeStok = New System.Windows.Forms.TextBox()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.BunifuCustomDataGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuCustomDataGrid2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -204,25 +203,6 @@ Partial Class KoreksiStok
         Me.BunifuCustomDataGrid2.Size = New System.Drawing.Size(412, 400)
         Me.BunifuCustomDataGrid2.TabIndex = 39
         '
-        'Column5
-        '
-        Me.Column5.HeaderText = "Nama Barang"
-        Me.Column5.Name = "Column5"
-        Me.Column5.Width = 200
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "stok_lama"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "Stok Lama"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "stok_sekarang"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "Stok Sekarang"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.Width = 112
-        '
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.AplikasiPenjualan.My.Resources.Resources.arrow_96px
@@ -367,12 +347,25 @@ Partial Class KoreksiStok
         Me.BunifuFlatButton4.Textcolor = System.Drawing.Color.White
         Me.BunifuFlatButton4.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
-        'kodeStok
+        'Column5
         '
-        Me.kodeStok.Location = New System.Drawing.Point(585, 562)
-        Me.kodeStok.Name = "kodeStok"
-        Me.kodeStok.Size = New System.Drawing.Size(41, 20)
-        Me.kodeStok.TabIndex = 51
+        Me.Column5.DataPropertyName = "nama_barang"
+        Me.Column5.HeaderText = "Nama Barang"
+        Me.Column5.Name = "Column5"
+        Me.Column5.Width = 200
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "stok_lama"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "Stok Lama"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "stok_sekarang"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Stok Sekarang"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.Width = 112
         '
         'KoreksiStok
         '
@@ -380,7 +373,6 @@ Partial Class KoreksiStok
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1018, 599)
-        Me.Controls.Add(Me.kodeStok)
         Me.Controls.Add(Me.BunifuFlatButton4)
         Me.Controls.Add(Me.BunifuFlatButton1)
         Me.Controls.Add(Me.R_Keterangan)
@@ -412,9 +404,6 @@ Partial Class KoreksiStok
     Friend WithEvents BunifuCustomDataGrid1 As Bunifu.Framework.UI.BunifuCustomDataGrid
     Friend WithEvents BunifuCustomDataGrid2 As Bunifu.Framework.UI.BunifuCustomDataGrid
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
-    Friend WithEvents Column5 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents search As Bunifu.Framework.UI.BunifuTextbox
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents R_ID As System.Windows.Forms.RadioButton
@@ -427,5 +416,7 @@ Partial Class KoreksiStok
     Friend WithEvents Column6 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column4 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column3 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents kodeStok As System.Windows.Forms.TextBox
+    Friend WithEvents Column5 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class
