@@ -22,12 +22,12 @@ Partial Class KoreksiStok
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle27 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle28 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle29 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle30 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(KoreksiStok))
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
@@ -41,7 +41,7 @@ Partial Class KoreksiStok
         Me.BunifuCustomDataGrid2 = New Bunifu.Framework.UI.BunifuCustomDataGrid()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.search = New Bunifu.Framework.UI.BunifuTextbox()
+        Me.searchItem = New Bunifu.Framework.UI.BunifuTextbox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.R_ID = New System.Windows.Forms.RadioButton()
         Me.R_Tanggal = New System.Windows.Forms.RadioButton()
@@ -51,6 +51,7 @@ Partial Class KoreksiStok
         Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         CType(Me.BunifuCustomDataGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BunifuCustomDataGrid2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -90,30 +91,30 @@ Partial Class KoreksiStok
         'BunifuCustomDataGrid1
         '
         Me.BunifuCustomDataGrid1.AllowUserToAddRows = False
-        DataGridViewCellStyle25.BackColor = System.Drawing.Color.White
-        Me.BunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle25
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.BunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.White
         Me.BunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.BunifuCustomDataGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
         Me.BunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(224, Byte), Integer))
-        DataGridViewCellStyle26.Font = New System.Drawing.Font("Segoe UI Semibold", 11.0!, System.Drawing.FontStyle.Bold)
-        DataGridViewCellStyle26.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle26
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(224, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI Semibold", 11.0!, System.Drawing.FontStyle.Bold)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.BunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.BunifuCustomDataGrid1.ColumnHeadersHeight = 41
         Me.BunifuCustomDataGrid1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column6, Me.Column4, Me.Column3})
-        DataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle27.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle27.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle27.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        DataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(244, Byte), Integer))
-        DataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        DataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.BunifuCustomDataGrid1.DefaultCellStyle = DataGridViewCellStyle27
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(244, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.BunifuCustomDataGrid1.DefaultCellStyle = DataGridViewCellStyle3
         Me.BunifuCustomDataGrid1.DoubleBuffered = True
         Me.BunifuCustomDataGrid1.EnableHeadersVisualStyles = False
         Me.BunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(224, Byte), Integer))
@@ -164,30 +165,30 @@ Partial Class KoreksiStok
         'BunifuCustomDataGrid2
         '
         Me.BunifuCustomDataGrid2.AllowUserToAddRows = False
-        DataGridViewCellStyle28.BackColor = System.Drawing.Color.White
-        Me.BunifuCustomDataGrid2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle28
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomDataGrid2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
         Me.BunifuCustomDataGrid2.BackgroundColor = System.Drawing.Color.White
         Me.BunifuCustomDataGrid2.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.BunifuCustomDataGrid2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
         Me.BunifuCustomDataGrid2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(224, Byte), Integer))
-        DataGridViewCellStyle29.Font = New System.Drawing.Font("Segoe UI Semibold", 11.0!, System.Drawing.FontStyle.Bold)
-        DataGridViewCellStyle29.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle29
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(224, Byte), Integer))
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Segoe UI Semibold", 11.0!, System.Drawing.FontStyle.Bold)
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.BunifuCustomDataGrid2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.BunifuCustomDataGrid2.ColumnHeadersHeight = 41
         Me.BunifuCustomDataGrid2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column5, Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2})
-        DataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle30.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle30.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle30.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        DataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(244, Byte), Integer))
-        DataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        DataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.BunifuCustomDataGrid2.DefaultCellStyle = DataGridViewCellStyle30
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(244, Byte), Integer))
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.BunifuCustomDataGrid2.DefaultCellStyle = DataGridViewCellStyle6
         Me.BunifuCustomDataGrid2.DoubleBuffered = True
         Me.BunifuCustomDataGrid2.EnableHeadersVisualStyles = False
         Me.BunifuCustomDataGrid2.HeaderBgColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(224, Byte), Integer))
@@ -223,18 +224,18 @@ Partial Class KoreksiStok
         Me.PictureBox1.TabIndex = 26
         Me.PictureBox1.TabStop = False
         '
-        'search
+        'searchItem
         '
-        Me.search.BackColor = System.Drawing.Color.White
-        Me.search.BackgroundImage = CType(resources.GetObject("search.BackgroundImage"), System.Drawing.Image)
-        Me.search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.search.ForeColor = System.Drawing.Color.Black
-        Me.search.Icon = CType(resources.GetObject("search.Icon"), System.Drawing.Image)
-        Me.search.Location = New System.Drawing.Point(141, 550)
-        Me.search.Name = "search"
-        Me.search.Size = New System.Drawing.Size(201, 32)
-        Me.search.TabIndex = 42
-        Me.search.text = ""
+        Me.searchItem.BackColor = System.Drawing.Color.White
+        Me.searchItem.BackgroundImage = CType(resources.GetObject("searchItem.BackgroundImage"), System.Drawing.Image)
+        Me.searchItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.searchItem.ForeColor = System.Drawing.Color.Black
+        Me.searchItem.Icon = CType(resources.GetObject("searchItem.Icon"), System.Drawing.Image)
+        Me.searchItem.Location = New System.Drawing.Point(141, 550)
+        Me.searchItem.Name = "searchItem"
+        Me.searchItem.Size = New System.Drawing.Size(201, 32)
+        Me.searchItem.TabIndex = 42
+        Me.searchItem.text = ""
         '
         'Label8
         '
@@ -366,18 +367,26 @@ Partial Class KoreksiStok
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         Me.DataGridViewTextBoxColumn2.Width = 112
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(597, 557)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox1.TabIndex = 51
+        '
         'KoreksiStok
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1018, 599)
-        Me.Controls.Add(Me.BunifuFlatButton4)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.BunifuFlatButton1)
+        Me.Controls.Add(Me.BunifuFlatButton4)
         Me.Controls.Add(Me.R_Keterangan)
         Me.Controls.Add(Me.R_Tanggal)
         Me.Controls.Add(Me.R_ID)
-        Me.Controls.Add(Me.search)
+        Me.Controls.Add(Me.searchItem)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.BunifuCustomDataGrid2)
@@ -403,7 +412,7 @@ Partial Class KoreksiStok
     Friend WithEvents BunifuCustomDataGrid1 As Bunifu.Framework.UI.BunifuCustomDataGrid
     Friend WithEvents BunifuCustomDataGrid2 As Bunifu.Framework.UI.BunifuCustomDataGrid
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
-    Friend WithEvents search As Bunifu.Framework.UI.BunifuTextbox
+    Friend WithEvents searchItem As Bunifu.Framework.UI.BunifuTextbox
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents R_ID As System.Windows.Forms.RadioButton
     Friend WithEvents R_Tanggal As System.Windows.Forms.RadioButton
@@ -418,4 +427,5 @@ Partial Class KoreksiStok
     Friend WithEvents Column5 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
 End Class
