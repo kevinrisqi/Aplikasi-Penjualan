@@ -77,6 +77,8 @@ Public Class TambahStok
                 End If
             Next
             Call loadTambahStok()
+            Call MainForm.switchPanel(KoreksiStok)
+            Call KoreksiStok.tampilData()
         End If
     End Sub
 

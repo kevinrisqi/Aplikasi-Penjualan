@@ -80,7 +80,7 @@ Partial Class MainForm
         Me.header.Dock = System.Windows.Forms.DockStyle.Top
         Me.header.Location = New System.Drawing.Point(306, 0)
         Me.header.Name = "header"
-        Me.header.Size = New System.Drawing.Size(738, 54)
+        Me.header.Size = New System.Drawing.Size(1060, 54)
         Me.header.TabIndex = 1
         '
         'lblIdAdmin
@@ -169,9 +169,9 @@ Partial Class MainForm
         Me.footer.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(77, Byte), Integer), CType(CType(77, Byte), Integer))
         Me.footer.Controls.Add(Me.Label2)
         Me.footer.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.footer.Location = New System.Drawing.Point(306, 700)
+        Me.footer.Location = New System.Drawing.Point(306, 704)
         Me.footer.Name = "footer"
-        Me.footer.Size = New System.Drawing.Size(738, 30)
+        Me.footer.Size = New System.Drawing.Size(1060, 30)
         Me.footer.TabIndex = 2
         '
         'Label2
@@ -192,7 +192,7 @@ Partial Class MainForm
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(306, 54)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(738, 646)
+        Me.Panel1.Size = New System.Drawing.Size(1060, 650)
         Me.Panel1.TabIndex = 4
         '
         'Panel2
@@ -231,7 +231,7 @@ Partial Class MainForm
         Me.sidebar.Location = New System.Drawing.Point(0, 0)
         Me.sidebar.Name = "sidebar"
         Me.sidebar.Quality = 10
-        Me.sidebar.Size = New System.Drawing.Size(306, 730)
+        Me.sidebar.Size = New System.Drawing.Size(306, 734)
         Me.sidebar.TabIndex = 0
         '
         'btnKoreksi
@@ -764,7 +764,7 @@ Partial Class MainForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1044, 730)
+        Me.ClientSize = New System.Drawing.Size(1366, 734)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.footer)
         Me.Controls.Add(Me.header)

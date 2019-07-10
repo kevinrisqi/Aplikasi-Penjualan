@@ -108,4 +108,8 @@ Public Class KoreksiStok
     Private Sub BunifuFlatButton4_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton4.Click
         Call hapusData()
     End Sub
+
+    Private Sub BunifuFlatButton1_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton1.Click
+        MainForm.switchPanel(TambahStok)
+    End Sub
 End Class
