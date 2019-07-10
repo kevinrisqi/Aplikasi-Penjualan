@@ -1,10 +1,11 @@
 ﻿Imports System.Data.Odbc
 Public Class KoreksiStok
 
+    Dim kodeStok As String
 
     Private Sub BunifuCustomDataGrid1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles BunifuCustomDataGrid1.CellClick
         Dim i As Integer
-        Dim kodeStok As String
+
         i = BunifuCustomDataGrid1.CurrentRow.Index
 
         kodeStok = BunifuCustomDataGrid1.Item(0, i).Value
@@ -90,4 +91,21 @@ Public Class KoreksiStok
         End If
     End Sub
 
+    Sub hapusData()
+        If kodeStok = "" Then
+            MsgBox("Pilih data yang akan dihapus !", vbInformation)
+        ElseIf MsgBox("Apakah Anda ingin menghapusnya ?", vbInformation + vbYesNo) = vbYes Then
+            Call koneksi()
+            Dim deleteData As String = "DELETE FROM koreksi_stok WHERE id = '" & kodeStok & "'"
+            Cmd = New OdbcCommand(deleteData, Conn)
+            Cmd.ExecuteNonQuery()
+            'MsgBox("Data berhasil dihapus")
+            Call tampilData()
+        Else
+        End If
+    End Sub
+
+    Private Sub BunifuFlatButton4_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton4.Click
+        Call hapusData()
+    End Sub
 End Class
