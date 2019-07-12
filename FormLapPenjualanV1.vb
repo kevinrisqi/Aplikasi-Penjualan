@@ -36,7 +36,8 @@ Public Class FormLapPenjualanV1
         Da.Fill(Ds, "DetailTransaksi")
         DateTimePicker1.CustomFormat = "dd-MM-yyyy"
         tanggal = DateTimePicker1.Text
-        rpt.Load(strPath + "\Zenai Software\Point Of Sale\Reports\LaporanHarian.rpt")
+        'rpt.Load(strPath + "\Zenai Software\Point Of Sale\Reports\LaporanHarian.rpt") Setup
+        rpt.Load(strPath + "Reports\LaporanHarian.rpt") 'Trial
         rpt.SetDataSource(Ds.Tables(0))
         CrystalReportViewer1.ReportSource = rpt
         CrystalReportViewer1.Refresh()
@@ -57,7 +58,8 @@ Public Class FormLapPenjualanV1
         Da = New OdbcDataAdapter("SELECT detail_penjualan.id_barang, detail_penjualan.nama_barang,harga_satuan, SUM(qty) AS Qty, SUM(SubTotal) AS SubTotal,SUM(diskon) AS diskon,SUM(netto) AS netto,SUM(total_pokok) AS total_pokok,nama_kategori,ppn,tanggal FROM detail_penjualan JOIN barang ON detail_penjualan.id_barang = barang.id_barang JOIN kategori_barang ON kategori_barang.id_kategori = barang.id_kategori JOIN penjualan ON penjualan.id_penjualan = detail_penjualan.id_penjualan WHERE MONTH(tanggal) = '" & month & "' AND YEAR(tanggal) = '" & year & "' GROUP BY detail_penjualan.id_barang", Conn)
         Ds = New DataSet
         Da.Fill(Ds, "DetailTransaksi")
-        rpt.Load(strPath + "\Zenai Software\Point Of Sale\Reports\LaporanBulanan.rpt")
+        'rpt.Load(strPath + "\Zenai Software\Point Of Sale\Reports\LaporanBulanan.rpt") 'Setup
+        rpt.Load(strPath + "Reports\LaporanBulanan.rpt") 'Trial
         rpt.SetDataSource(Ds.Tables(0))
         CrystalReportViewer1.ReportSource = rpt
         CrystalReportViewer1.Refresh()
@@ -86,7 +88,8 @@ Public Class FormLapPenjualanV1
         tanggal1 = DateTimePicker3.Text
         DateTimePicker4.CustomFormat = "dd-MM-yyyy"
         tanggal2 = DateTimePicker4.Text
-        rpt.Load(strPath + "\Zenai Software\Point Of Sale\Reports\LaporanCustom.rpt")
+        'rpt.Load(strPath + "\Zenai Software\Point Of Sale\Reports\LaporanCustom.rpt") 'Setup
+        rpt.Load(strPath + "Reports\LaporanCustom.rpt") 'Trial
         rpt.SetDataSource(Ds.Tables(0))
         rpt.SetParameterValue("tanggal1", tanggal1)
         rpt.SetParameterValue("tanggal2", tanggal2)
