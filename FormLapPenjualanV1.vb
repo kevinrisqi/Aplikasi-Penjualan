@@ -31,7 +31,7 @@ Public Class FormLapPenjualanV1
         strPath = strPath.Substring(0, strPath.LastIndexOf("\"))
         strPath = strPath + "\"
         Dim rpt As New ReportDocument
-        Da = New OdbcDataAdapter("SELECT detail_penjualan.id_barang, detail_penjualan.nama_barang,harga_satuan, SUM(qty) AS Qty, SUM(SubTotal) AS SubTotal,SUM(diskon) AS diskon,SUM(netto) AS netto,SUM(total_pokok) AS total_pokok,nama_kategori,ppn,tanggal FROM detail_penjualan JOIN barang ON detail_penjualan.id_barang = barang.id_barang JOIN kategori_barang ON kategori_barang.id_kategori = barang.id_kategori JOIN penjualan ON penjualan.id_penjualan = detail_penjualan.id_penjualan WHERE tanggal = '" & tanggal & "' GROUP BY detail_penjualan.id_barang", Conn)
+        Da = New OdbcDataAdapter("SELECT detail_penjualan.id_barang, detail_penjualan.nama_barang,harga_satuan, SUM(qty) AS Qty, SUM(SubTotal) AS SubTotal,SUM(diskon) AS diskon,SUM(netto) AS netto,SUM(total_pokok) AS total_pokok,nama_kategori,ppn,tanggal FROM detail_penjualan JOIN barang ON detail_penjualan.id_barang = barang.id_barang JOIN kategori_barang ON kategori_barang.id_kategori = barang.id_kategori JOIN penjualan ON penjualan.id_penjualan = detail_penjualan.id_penjualan WHERE tanggal = '" & tanggal & "' GROUP BY detail_penjualan.id_barang,harga_satuan,harga_pokok", Conn)
         Ds = New DataSet
         Da.Fill(Ds, "DetailTransaksi")
         DateTimePicker1.CustomFormat = "dd-MM-yyyy"
@@ -55,7 +55,8 @@ Public Class FormLapPenjualanV1
         strPath = strPath.Substring(0, strPath.LastIndexOf("\"))
         strPath = strPath + "\"
         Dim rpt As New ReportDocument
-        Da = New OdbcDataAdapter("SELECT detail_penjualan.id_barang, detail_penjualan.nama_barang,harga_satuan, SUM(qty) AS Qty, SUM(SubTotal) AS SubTotal,SUM(diskon) AS diskon,SUM(netto) AS netto,SUM(total_pokok) AS total_pokok,nama_kategori,ppn,tanggal FROM detail_penjualan JOIN barang ON detail_penjualan.id_barang = barang.id_barang JOIN kategori_barang ON kategori_barang.id_kategori = barang.id_kategori JOIN penjualan ON penjualan.id_penjualan = detail_penjualan.id_penjualan WHERE MONTH(tanggal) = '" & month & "' AND YEAR(tanggal) = '" & year & "' GROUP BY detail_penjualan.id_barang", Conn)
+        Da = New OdbcDataAdapter("SELECT detail_penjualan.id_barang, detail_penjualan.nama_barang,harga_satuan, SUM(qty) AS Qty, SUM(SubTotal) AS SubTotal,SUM(diskon) AS diskon,SUM(netto) AS netto,SUM(total_pokok) AS total_pokok,nama_kategori,ppn,tanggal FROM detail_penjualan JOIN barang ON detail_penjualan.id_barang = barang.id_barang JOIN kategori_barang ON kategori_barang.id_kategori = barang.id_kategori JOIN penjualan ON penjualan.id_penjualan = detail_penjualan.id_penjualan WHERE MONTH(tanggal) = '" & month & "' AND YEAR(tanggal) = '" & year & "' GROUP BY detail_penjualan.id_barang,harga_satuan,harga_pokok", Conn)
+        'Da = New OdbcDataAdapter("SELECT detail_penjualan.id_barang,nama_barang,harga_pokok,harga_satuan,SUM(qty) as qty,SUM(subtotal) as subtotal FROM penjualan JOIN detail_penjualan on penjualan.id_penjualan = detail_penjualan.id_penjualan WHERE penjualan.tanggal BETWEEN '2019-06-11' AND '2019-06-14' GROUP BY id_barang,harga_satuan,harga_pokok", Conn)
         Ds = New DataSet
         Da.Fill(Ds, "DetailTransaksi")
         'rpt.Load(strPath + "\Zenai Software\Point Of Sale\Reports\LaporanBulanan.rpt") 'Setup
@@ -81,7 +82,7 @@ Public Class FormLapPenjualanV1
         strPath = strPath.Substring(0, strPath.LastIndexOf("\"))
         strPath = strPath + "\"
         Dim rpt As New ReportDocument
-        Da = New OdbcDataAdapter("SELECT detail_penjualan.id_barang, detail_penjualan.nama_barang,harga_satuan, SUM(qty) AS Qty, SUM(SubTotal) AS SubTotal,SUM(diskon) AS diskon,SUM(netto) AS netto,SUM(total_pokok) AS total_pokok,nama_kategori,ppn,tanggal FROM detail_penjualan JOIN barang ON detail_penjualan.id_barang = barang.id_barang JOIN kategori_barang ON kategori_barang.id_kategori = barang.id_kategori JOIN penjualan ON penjualan.id_penjualan = detail_penjualan.id_penjualan WHERE tanggal between '" & tanggal1 & "' and '" & tanggal2 & "' GROUP BY detail_penjualan.id_barang", Conn)
+        Da = New OdbcDataAdapter("SELECT detail_penjualan.id_barang, detail_penjualan.nama_barang,harga_satuan, SUM(qty) AS Qty, SUM(SubTotal) AS SubTotal,SUM(diskon) AS diskon,SUM(netto) AS netto,SUM(total_pokok) AS total_pokok,nama_kategori,ppn,tanggal FROM detail_penjualan JOIN barang ON detail_penjualan.id_barang = barang.id_barang JOIN kategori_barang ON kategori_barang.id_kategori = barang.id_kategori JOIN penjualan ON penjualan.id_penjualan = detail_penjualan.id_penjualan WHERE tanggal between '" & tanggal1 & "' and '" & tanggal2 & "' GROUP BY detail_penjualan.id_barang,harga_satuan,harga_pokok", Conn)
         Ds = New DataSet
         Da.Fill(Ds, "DetailTransaksi")
         DateTimePicker3.CustomFormat = "dd-MM-yyyy"
