@@ -123,4 +123,16 @@ Public Class FormLapPenjualanV1
     Private Sub BunifuFlatButton3_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton3.Click
         Call monthReport()
     End Sub
+
+    Private Sub BunifuFlatButton4_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton4.Click
+        If R_Harian.Checked And R_All.Checked Then
+            Call dailyReport()
+        ElseIf R_Bulanan.Checked And R_All.Checked Then
+            Call monthReport()
+        ElseIf R_Custom.Checked And R_All.Checked Then
+            Call customReport()
+        Else
+
+        End If
+    End Sub
 End Class

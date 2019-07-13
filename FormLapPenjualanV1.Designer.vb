@@ -38,11 +38,15 @@ Partial Class FormLapPenjualanV1
         Me.BunifuFlatButton3 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
+        Me.R_All = New System.Windows.Forms.RadioButton()
+        Me.R_PPN = New System.Windows.Forms.RadioButton()
+        Me.R_NonPPN = New System.Windows.Forms.RadioButton()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.BunifuFlatButton4 = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.R_Harian = New System.Windows.Forms.RadioButton()
+        Me.R_Bulanan = New System.Windows.Forms.RadioButton()
+        Me.R_Custom = New System.Windows.Forms.RadioButton()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -56,13 +60,13 @@ Partial Class FormLapPenjualanV1
         Me.CrystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.CrystalReportViewer1.CachedPageNumberPerDoc = 10
         Me.CrystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default
-        Me.CrystalReportViewer1.Location = New System.Drawing.Point(57, 455)
+        Me.CrystalReportViewer1.Location = New System.Drawing.Point(57, 516)
         Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
         Me.CrystalReportViewer1.ShowCloseButton = False
         Me.CrystalReportViewer1.ShowLogo = False
         Me.CrystalReportViewer1.ShowParameterPanelButton = False
         Me.CrystalReportViewer1.ShowRefreshButton = False
-        Me.CrystalReportViewer1.Size = New System.Drawing.Size(888, 132)
+        Me.CrystalReportViewer1.Size = New System.Drawing.Size(888, 71)
         Me.CrystalReportViewer1.TabIndex = 1
         Me.CrystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         Me.CrystalReportViewer1.Visible = False
@@ -108,7 +112,6 @@ Partial Class FormLapPenjualanV1
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.BunifuFlatButton1)
         Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
         Me.GroupBox1.Location = New System.Drawing.Point(57, 120)
         Me.GroupBox1.Name = "GroupBox1"
@@ -128,7 +131,6 @@ Partial Class FormLapPenjualanV1
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.BunifuFlatButton3)
         Me.GroupBox2.Controls.Add(Me.DateTimePicker2)
         Me.GroupBox2.Location = New System.Drawing.Point(356, 120)
         Me.GroupBox2.Name = "GroupBox2"
@@ -141,15 +143,15 @@ Partial Class FormLapPenjualanV1
         '
         Me.DateTimePicker3.CustomFormat = "dd-MM-yyyy"
         Me.DateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker3.Location = New System.Drawing.Point(21, 34)
+        Me.DateTimePicker3.Location = New System.Drawing.Point(6, 34)
         Me.DateTimePicker3.Name = "DateTimePicker3"
         Me.DateTimePicker3.Size = New System.Drawing.Size(133, 20)
         Me.DateTimePicker3.TabIndex = 4
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.Label2)
         Me.GroupBox3.Controls.Add(Me.DateTimePicker4)
-        Me.GroupBox3.Controls.Add(Me.BunifuFlatButton2)
         Me.GroupBox3.Controls.Add(Me.DateTimePicker3)
         Me.GroupBox3.Location = New System.Drawing.Point(656, 120)
         Me.GroupBox3.Name = "GroupBox3"
@@ -162,7 +164,7 @@ Partial Class FormLapPenjualanV1
         '
         Me.DateTimePicker4.CustomFormat = "dd-MM-yyyy"
         Me.DateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker4.Location = New System.Drawing.Point(21, 60)
+        Me.DateTimePicker4.Location = New System.Drawing.Point(151, 34)
         Me.DateTimePicker4.Name = "DateTimePicker4"
         Me.DateTimePicker4.Size = New System.Drawing.Size(133, 20)
         Me.DateTimePicker4.TabIndex = 7
@@ -170,10 +172,10 @@ Partial Class FormLapPenjualanV1
         'GroupBox4
         '
         Me.GroupBox4.Controls.Add(Me.Label1)
-        Me.GroupBox4.Controls.Add(Me.RadioButton3)
-        Me.GroupBox4.Controls.Add(Me.RadioButton2)
-        Me.GroupBox4.Controls.Add(Me.RadioButton1)
-        Me.GroupBox4.Location = New System.Drawing.Point(57, 232)
+        Me.GroupBox4.Controls.Add(Me.R_NonPPN)
+        Me.GroupBox4.Controls.Add(Me.R_PPN)
+        Me.GroupBox4.Controls.Add(Me.R_All)
+        Me.GroupBox4.Location = New System.Drawing.Point(56, 261)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(888, 164)
         Me.GroupBox4.TabIndex = 29
@@ -201,7 +203,7 @@ Partial Class FormLapPenjualanV1
         Me.BunifuFlatButton2.IconVisible = True
         Me.BunifuFlatButton2.IconZoom = 50.0R
         Me.BunifuFlatButton2.IsTab = False
-        Me.BunifuFlatButton2.Location = New System.Drawing.Point(163, 34)
+        Me.BunifuFlatButton2.Location = New System.Drawing.Point(534, 446)
         Me.BunifuFlatButton2.Name = "BunifuFlatButton2"
         Me.BunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(127, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.BunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(112, Byte), Integer))
@@ -213,6 +215,7 @@ Partial Class FormLapPenjualanV1
         Me.BunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BunifuFlatButton2.Textcolor = System.Drawing.Color.White
         Me.BunifuFlatButton2.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuFlatButton2.Visible = False
         '
         'BunifuFlatButton3
         '
@@ -235,7 +238,7 @@ Partial Class FormLapPenjualanV1
         Me.BunifuFlatButton3.IconVisible = True
         Me.BunifuFlatButton3.IconZoom = 50.0R
         Me.BunifuFlatButton3.IsTab = False
-        Me.BunifuFlatButton3.Location = New System.Drawing.Point(163, 34)
+        Me.BunifuFlatButton3.Location = New System.Drawing.Point(408, 445)
         Me.BunifuFlatButton3.Name = "BunifuFlatButton3"
         Me.BunifuFlatButton3.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(127, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.BunifuFlatButton3.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(112, Byte), Integer))
@@ -247,6 +250,7 @@ Partial Class FormLapPenjualanV1
         Me.BunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BunifuFlatButton3.Textcolor = System.Drawing.Color.White
         Me.BunifuFlatButton3.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuFlatButton3.Visible = False
         '
         'BunifuFlatButton1
         '
@@ -269,7 +273,7 @@ Partial Class FormLapPenjualanV1
         Me.BunifuFlatButton1.IconVisible = True
         Me.BunifuFlatButton1.IconZoom = 50.0R
         Me.BunifuFlatButton1.IsTab = False
-        Me.BunifuFlatButton1.Location = New System.Drawing.Point(163, 34)
+        Me.BunifuFlatButton1.Location = New System.Drawing.Point(282, 445)
         Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
         Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(127, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.BunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(112, Byte), Integer))
@@ -281,6 +285,7 @@ Partial Class FormLapPenjualanV1
         Me.BunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BunifuFlatButton1.Textcolor = System.Drawing.Color.White
         Me.BunifuFlatButton1.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BunifuFlatButton1.Visible = False
         '
         'PictureBox1
         '
@@ -292,37 +297,37 @@ Partial Class FormLapPenjualanV1
         Me.PictureBox1.TabIndex = 26
         Me.PictureBox1.TabStop = False
         '
-        'RadioButton1
+        'R_All
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Checked = True
-        Me.RadioButton1.Location = New System.Drawing.Point(39, 47)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(58, 17)
-        Me.RadioButton1.TabIndex = 0
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Semua"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.R_All.AutoSize = True
+        Me.R_All.Checked = True
+        Me.R_All.Location = New System.Drawing.Point(39, 47)
+        Me.R_All.Name = "R_All"
+        Me.R_All.Size = New System.Drawing.Size(58, 17)
+        Me.R_All.TabIndex = 0
+        Me.R_All.TabStop = True
+        Me.R_All.Text = "Semua"
+        Me.R_All.UseVisualStyleBackColor = True
         '
-        'RadioButton2
+        'R_PPN
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(39, 82)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(47, 17)
-        Me.RadioButton2.TabIndex = 1
-        Me.RadioButton2.Text = "PPN"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.R_PPN.AutoSize = True
+        Me.R_PPN.Location = New System.Drawing.Point(39, 82)
+        Me.R_PPN.Name = "R_PPN"
+        Me.R_PPN.Size = New System.Drawing.Size(47, 17)
+        Me.R_PPN.TabIndex = 1
+        Me.R_PPN.Text = "PPN"
+        Me.R_PPN.UseVisualStyleBackColor = True
         '
-        'RadioButton3
+        'R_NonPPN
         '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(39, 116)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(76, 17)
-        Me.RadioButton3.TabIndex = 2
-        Me.RadioButton3.Text = "Non - PPN"
-        Me.RadioButton3.UseVisualStyleBackColor = True
+        Me.R_NonPPN.AutoSize = True
+        Me.R_NonPPN.Location = New System.Drawing.Point(39, 116)
+        Me.R_NonPPN.Name = "R_NonPPN"
+        Me.R_NonPPN.Size = New System.Drawing.Size(76, 17)
+        Me.R_NonPPN.TabIndex = 2
+        Me.R_NonPPN.Text = "Non - PPN"
+        Me.R_NonPPN.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -355,7 +360,7 @@ Partial Class FormLapPenjualanV1
         Me.BunifuFlatButton4.IconVisible = True
         Me.BunifuFlatButton4.IconZoom = 50.0R
         Me.BunifuFlatButton4.IsTab = False
-        Me.BunifuFlatButton4.Location = New System.Drawing.Point(825, 402)
+        Me.BunifuFlatButton4.Location = New System.Drawing.Point(825, 431)
         Me.BunifuFlatButton4.Name = "BunifuFlatButton4"
         Me.BunifuFlatButton4.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(127, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.BunifuFlatButton4.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(112, Byte), Integer))
@@ -368,12 +373,61 @@ Partial Class FormLapPenjualanV1
         Me.BunifuFlatButton4.Textcolor = System.Drawing.Color.White
         Me.BunifuFlatButton4.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
+        'R_Harian
+        '
+        Me.R_Harian.AutoSize = True
+        Me.R_Harian.Checked = True
+        Me.R_Harian.Location = New System.Drawing.Point(95, 222)
+        Me.R_Harian.Name = "R_Harian"
+        Me.R_Harian.Size = New System.Drawing.Size(44, 17)
+        Me.R_Harian.TabIndex = 6
+        Me.R_Harian.TabStop = True
+        Me.R_Harian.Text = "Pilih"
+        Me.R_Harian.UseVisualStyleBackColor = True
+        '
+        'R_Bulanan
+        '
+        Me.R_Bulanan.AutoSize = True
+        Me.R_Bulanan.Location = New System.Drawing.Point(409, 222)
+        Me.R_Bulanan.Name = "R_Bulanan"
+        Me.R_Bulanan.Size = New System.Drawing.Size(44, 17)
+        Me.R_Bulanan.TabIndex = 7
+        Me.R_Bulanan.TabStop = True
+        Me.R_Bulanan.Text = "Pilih"
+        Me.R_Bulanan.UseVisualStyleBackColor = True
+        '
+        'R_Custom
+        '
+        Me.R_Custom.AutoSize = True
+        Me.R_Custom.Location = New System.Drawing.Point(733, 222)
+        Me.R_Custom.Name = "R_Custom"
+        Me.R_Custom.Size = New System.Drawing.Size(44, 17)
+        Me.R_Custom.TabIndex = 8
+        Me.R_Custom.TabStop = True
+        Me.R_Custom.Text = "Pilih"
+        Me.R_Custom.UseVisualStyleBackColor = True
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(141, 38)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(10, 13)
+        Me.Label2.TabIndex = 9
+        Me.Label2.Text = "-"
+        '
         'FormLapPenjualanV1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1018, 599)
+        Me.Controls.Add(Me.R_Custom)
+        Me.Controls.Add(Me.R_Harian)
+        Me.Controls.Add(Me.R_Bulanan)
+        Me.Controls.Add(Me.BunifuFlatButton2)
+        Me.Controls.Add(Me.BunifuFlatButton3)
+        Me.Controls.Add(Me.BunifuFlatButton1)
         Me.Controls.Add(Me.BunifuFlatButton4)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
@@ -390,6 +444,7 @@ Partial Class FormLapPenjualanV1
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox4.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -414,8 +469,12 @@ Partial Class FormLapPenjualanV1
     Friend WithEvents BunifuFlatButton3 As Bunifu.Framework.UI.BunifuFlatButton
     Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents RadioButton3 As System.Windows.Forms.RadioButton
-    Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
-    Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
+    Friend WithEvents R_NonPPN As System.Windows.Forms.RadioButton
+    Friend WithEvents R_PPN As System.Windows.Forms.RadioButton
+    Friend WithEvents R_All As System.Windows.Forms.RadioButton
     Friend WithEvents BunifuFlatButton4 As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents R_Harian As System.Windows.Forms.RadioButton
+    Friend WithEvents R_Bulanan As System.Windows.Forms.RadioButton
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents R_Custom As System.Windows.Forms.RadioButton
 End Class
