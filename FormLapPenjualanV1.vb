@@ -39,8 +39,11 @@ Public Class FormLapPenjualanV1
         'rpt.Load(strPath + "\Zenai Software\Point Of Sale\Reports\LaporanHarian.rpt") Setup
         rpt.Load(strPath + "Reports\LaporanHarian.rpt") 'Trial
         rpt.SetDataSource(Ds.Tables(0))
-        CrystalReportViewer1.ReportSource = rpt
-        CrystalReportViewer1.Refresh()
+        'CrystalReportViewer1.ReportSource = rpt
+        'CrystalReportViewer1.Refresh()
+        SalesReport.Show()
+        SalesReport.CrystalReportViewer1.ReportSource = rpt
+        SalesReport.CrystalReportViewer1.Refresh()
     End Sub
 
     Sub monthReport()
@@ -62,8 +65,11 @@ Public Class FormLapPenjualanV1
         'rpt.Load(strPath + "\Zenai Software\Point Of Sale\Reports\LaporanBulanan.rpt") 'Setup
         rpt.Load(strPath + "Reports\LaporanBulanan.rpt") 'Trial
         rpt.SetDataSource(Ds.Tables(0))
-        CrystalReportViewer1.ReportSource = rpt
-        CrystalReportViewer1.Refresh()
+        'CrystalReportViewer1.ReportSource = rpt
+        'CrystalReportViewer1.Refresh()
+        SalesReport.Show()
+        SalesReport.CrystalReportViewer1.ReportSource = rpt
+        SalesReport.CrystalReportViewer1.Refresh()
     End Sub
 
     Sub customReport()
@@ -94,7 +100,8 @@ Public Class FormLapPenjualanV1
         rpt.SetDataSource(Ds.Tables(0))
         rpt.SetParameterValue("tanggal1", tanggal1)
         rpt.SetParameterValue("tanggal2", tanggal2)
-        CrystalReportViewer1.ReportSource = rpt
+        SalesReport.Show()
+        SalesReport.CrystalReportViewer1.ReportSource = rpt
         'paramV = New CrystalDecisions.Shared.ParameterValues
         'paramDValue = New CrystalDecisions.Shared.ParameterDiscreteValue
         'paramDValue.Value = tanggal1

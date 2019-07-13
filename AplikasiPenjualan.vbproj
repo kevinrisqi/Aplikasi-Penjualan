@@ -221,6 +221,12 @@
       <DependentUpon>LaporanHarian.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="SalesReport.Designer.vb">
+      <DependentUpon>SalesReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TambahStok.Designer.vb">
       <DependentUpon>TambahStok.vb</DependentUpon>
     </Compile>
@@ -292,6 +298,9 @@
     <EmbeddedResource Include="Reports\LaporanHarian.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>LaporanHarian.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesReport.resx">
+      <DependentUpon>SalesReport.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TambahStok.resx">
       <DependentUpon>TambahStok.vb</DependentUpon>
