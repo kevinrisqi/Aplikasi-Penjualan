@@ -255,7 +255,7 @@ Partial Class FormAddBarang
         Me.submit.IconMarginLeft = 0
         Me.submit.IconMarginRight = 0
         Me.submit.IconRightVisible = True
-        Me.submit.IconRightZoom = 0R
+        Me.submit.IconRightZoom = 0.0R
         Me.submit.IconVisible = True
         Me.submit.IconZoom = 90.0R
         Me.submit.IsTab = False
@@ -296,7 +296,7 @@ Partial Class FormAddBarang
         Me.cancel.IconMarginLeft = 0
         Me.cancel.IconMarginRight = 0
         Me.cancel.IconRightVisible = True
-        Me.cancel.IconRightZoom = 0R
+        Me.cancel.IconRightZoom = 0.0R
         Me.cancel.IconVisible = True
         Me.cancel.IconZoom = 90.0R
         Me.cancel.IsTab = False
