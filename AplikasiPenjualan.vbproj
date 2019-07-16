@@ -103,6 +103,12 @@
     <Compile Include="B_FormLogin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="UpdateHargaBarang.Designer.vb">
+      <DependentUpon>UpdateHargaBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateHargaBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="KoreksiBarang.Designer.vb">
       <DependentUpon>KoreksiBarang.vb</DependentUpon>
     </Compile>
@@ -233,10 +239,19 @@
     <Compile Include="TambahStok.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="UpdateHarga.Designer.vb">
+      <DependentUpon>UpdateHarga.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateHarga.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="B_FormLogin.resx">
       <DependentUpon>B_FormLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateHargaBarang.resx">
+      <DependentUpon>UpdateHargaBarang.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KoreksiBarang.resx">
       <DependentUpon>KoreksiBarang.vb</DependentUpon>
@@ -304,6 +319,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TambahStok.resx">
       <DependentUpon>TambahStok.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateHarga.resx">
+      <DependentUpon>UpdateHarga.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -451,6 +469,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\arrow_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\price_tag_usd_80px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
