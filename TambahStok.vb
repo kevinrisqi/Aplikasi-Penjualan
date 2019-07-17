@@ -137,4 +137,8 @@ Public Class TambahStok
     Private Sub newstock_TextChanged(sender As Object, e As EventArgs) Handles newstock.TextChanged
 
     End Sub
+
+    Private Sub BunifuFlatButton4_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton4.Click
+        MainForm.switchPanel(KoreksiStok)
+    End Sub
 End Class

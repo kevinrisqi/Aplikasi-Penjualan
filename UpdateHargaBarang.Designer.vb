@@ -76,6 +76,7 @@ Partial Class UpdateHargaBarang
         'kodeBarang
         '
         Me.kodeBarang.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.kodeBarang.Enabled = False
         Me.kodeBarang.Font = New System.Drawing.Font("Century Gothic", 9.75!)
         Me.kodeBarang.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.kodeBarang.HintForeColor = System.Drawing.Color.Empty
@@ -95,6 +96,7 @@ Partial Class UpdateHargaBarang
         'namaBarang
         '
         Me.namaBarang.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.namaBarang.Enabled = False
         Me.namaBarang.Font = New System.Drawing.Font("Century Gothic", 9.75!)
         Me.namaBarang.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.namaBarang.HintForeColor = System.Drawing.Color.Empty
@@ -127,7 +129,7 @@ Partial Class UpdateHargaBarang
         Me.beli.Margin = New System.Windows.Forms.Padding(4)
         Me.beli.Name = "beli"
         Me.beli.Size = New System.Drawing.Size(209, 44)
-        Me.beli.TabIndex = 6
+        Me.beli.TabIndex = 1
         Me.beli.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'jual
@@ -146,7 +148,7 @@ Partial Class UpdateHargaBarang
         Me.jual.Margin = New System.Windows.Forms.Padding(4)
         Me.jual.Name = "jual"
         Me.jual.Size = New System.Drawing.Size(209, 44)
-        Me.jual.TabIndex = 7
+        Me.jual.TabIndex = 2
         Me.jual.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'id
@@ -290,7 +292,7 @@ Partial Class UpdateHargaBarang
         Me.keterangan.Margin = New System.Windows.Forms.Padding(4)
         Me.keterangan.Name = "keterangan"
         Me.keterangan.Size = New System.Drawing.Size(705, 44)
-        Me.keterangan.TabIndex = 22
+        Me.keterangan.TabIndex = 3
         Me.keterangan.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'UpdateHargaBarang

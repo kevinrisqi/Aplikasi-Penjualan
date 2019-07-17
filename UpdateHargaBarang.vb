@@ -60,6 +60,7 @@ Public Class UpdateHargaBarang
         beli.Text = ""
         jual.Text = ""
         id.Text = ""
+        keterangan.Text = ""
     End Sub
 
     Sub insertData()
@@ -72,10 +73,10 @@ Public Class UpdateHargaBarang
             Dim inputData As String = "INSERT INTO update_harga (id_barang,harga_beli,harga_jual,keterangan,tanggal,jam) values ('" & kodeBarang.Text & "', '" & beli.Text & "', '" & jual.Text & "', '" & keterangan.Text & "', '" & tanggal.Text & "','" & jam.Text & "')"
             Cmd = New OdbcCommand(inputData, Conn)
             Cmd.ExecuteNonQuery()
-            Cmd = New OdbcCommand("UPDATE barang set harga_beli='" & beli.Text & "' OR harga_jual = '" & jual.Text & "' WHERE id='" & id.Text & "'", Conn)
+            Cmd = New OdbcCommand("UPDATE barang set harga_beli='" & beli.Text & "',harga_jual = '" & jual.Text & "' WHERE id='" & id.Text & "'", Conn)
             Cmd.ExecuteNonQuery()
             Call kondisiAwal()
-            Call kondisiAwal()
+            UpdateHarga.tampilBarang()
             switchPanel(UpdateHarga)
         End If
     End Sub

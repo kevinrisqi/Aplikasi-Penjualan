@@ -80,6 +80,9 @@ Public Class FormAddBarang
                 e.Handled = True
             End If
         End If
+        If Not id.Text = "" Then
+            e.Handled = True
+        End If
     End Sub
 
     Private Sub beli_KeyPress(sender As Object, e As KeyPressEventArgs) Handles beli.KeyPress
@@ -91,6 +94,9 @@ Public Class FormAddBarang
             If e.KeyChar <> ControlChars.Back Then
                 e.Handled = True
             End If
+        End If
+        If Not id.Text = "" Then
+            e.Handled = True
         End If
     End Sub
 

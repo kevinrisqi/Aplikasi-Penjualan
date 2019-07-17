@@ -112,4 +112,8 @@ Public Class KoreksiStok
     Private Sub BunifuFlatButton1_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton1.Click
         MainForm.switchPanel(TambahStok)
     End Sub
+
+    Private Sub BunifuCustomDataGrid1_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles BunifuCustomDataGrid1.CellDoubleClick
+
+    End Sub
 End Class
