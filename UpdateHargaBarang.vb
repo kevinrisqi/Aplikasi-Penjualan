@@ -70,23 +70,20 @@ Public Class UpdateHargaBarang
             MsgBox("Harga beli harus lebih kecil dari harga jual !", vbInformation)
         Else
             Call koneksi()
-            Dim inputData As String = "INSERT INTO update_harga (id_barang,nama_barang,harga_beli,harga_jual,stok,keterangan,tanggal_input,jam) values ('" & kodeBarang.Text & "', '" & namaBarang.Text & "', '" & beli.Text & "', '" & jual.Text & "', '" & stok.Text & "', '" & satuan.Text & "', '" & keterangan.Text & "', '" & kategoriID.Text & "', '" & tanggalInput.Text & "','" & MainForm.btnLogin.Text & "','" & ppn.Text & "')"
+            Dim inputData As String = "INSERT INTO update_harga (id_barang,harga_beli,harga_jual,keterangan,tanggal,jam) values ('" & kodeBarang.Text & "', '" & beli.Text & "', '" & jual.Text & "', '" & keterangan.Text & "', '" & tanggal.Text & "','" & jam.Text & "')"
             Cmd = New OdbcCommand(inputData, Conn)
             Cmd.ExecuteNonQuery()
-            Call FormBarang.tampilBarang()
+            Cmd = New OdbcCommand("UPDATE barang set harga_beli='" & beli.Text & "' OR harga_jual = '" & jual.Text & "' WHERE id='" & id.Text & "'", Conn)
+            Cmd.ExecuteNonQuery()
             Call kondisiAwal()
             Call FormBarang.kondisiAwal()
             switchPanel(UpdateHarga)
         End If
     End Sub
 
-    Sub updateData()
-        
-    End Sub
-
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        tanggal.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
-        jam.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
+        tanggal.Text = DateTime.Now.ToString("yyyy-MM-dd")
+        jam.Text = DateTime.Now.ToString("hh:mm:ss")
     End Sub
 
     Private Sub submit_Click(sender As Object, e As EventArgs) Handles submit.Click
