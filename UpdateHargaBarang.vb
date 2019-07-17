@@ -4,7 +4,6 @@ Public Class UpdateHargaBarang
     Private Sub UpdateHargaBarang_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
         If (e.KeyCode = Keys.Enter) Then
                 Call insertData()
-                Call updateData()
         End If
     End Sub
 
@@ -76,7 +75,7 @@ Public Class UpdateHargaBarang
             Cmd = New OdbcCommand("UPDATE barang set harga_beli='" & beli.Text & "' OR harga_jual = '" & jual.Text & "' WHERE id='" & id.Text & "'", Conn)
             Cmd.ExecuteNonQuery()
             Call kondisiAwal()
-            Call FormBarang.kondisiAwal()
+            Call kondisiAwal()
             switchPanel(UpdateHarga)
         End If
     End Sub
@@ -88,7 +87,6 @@ Public Class UpdateHargaBarang
 
     Private Sub submit_Click(sender As Object, e As EventArgs) Handles submit.Click
             Call insertData()
-            Call updateData()
     End Sub
 
     Private Sub cancel_Click(sender As Object, e As EventArgs) Handles cancel.Click

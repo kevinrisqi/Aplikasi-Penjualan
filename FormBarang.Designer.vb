@@ -23,9 +23,9 @@ Partial Class FormBarang
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormBarang))
         Me.idBarang = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -57,6 +57,7 @@ Partial Class FormBarang
         Me.BunifuFlatButton2 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton1 = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton3 = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.BunifuFlatButton5 = New Bunifu.Framework.UI.BunifuFlatButton()
         CType(Me.BunifuCustomDataGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -64,7 +65,7 @@ Partial Class FormBarang
         'idBarang
         '
         Me.idBarang.Enabled = False
-        Me.idBarang.Location = New System.Drawing.Point(567, 121)
+        Me.idBarang.Location = New System.Drawing.Point(636, 548)
         Me.idBarang.MaxLength = 15
         Me.idBarang.Name = "idBarang"
         Me.idBarang.Size = New System.Drawing.Size(29, 20)
@@ -75,7 +76,7 @@ Partial Class FormBarang
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(62, 155)
+        Me.Label8.Location = New System.Drawing.Point(62, 546)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(125, 18)
         Me.Label8.TabIndex = 16
@@ -115,7 +116,7 @@ Partial Class FormBarang
         '
         Me.RadioButton1.AutoSize = True
         Me.RadioButton1.Checked = True
-        Me.RadioButton1.Location = New System.Drawing.Point(437, 157)
+        Me.RadioButton1.Location = New System.Drawing.Point(437, 548)
         Me.RadioButton1.Name = "RadioButton1"
         Me.RadioButton1.Size = New System.Drawing.Size(87, 17)
         Me.RadioButton1.TabIndex = 34
@@ -126,7 +127,7 @@ Partial Class FormBarang
         'RadioButton2
         '
         Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(530, 157)
+        Me.RadioButton2.Location = New System.Drawing.Point(530, 548)
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.Size = New System.Drawing.Size(90, 17)
         Me.RadioButton2.TabIndex = 35
@@ -136,31 +137,31 @@ Partial Class FormBarang
         'BunifuCustomDataGrid1
         '
         Me.BunifuCustomDataGrid1.AllowUserToAddRows = False
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
-        Me.BunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        Me.BunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.BunifuCustomDataGrid1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells
         Me.BunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.White
         Me.BunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.BunifuCustomDataGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
         Me.BunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(224, Byte), Integer))
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Segoe UI Semibold", 11.0!, System.Drawing.FontStyle.Bold)
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(224, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI Semibold", 11.0!, System.Drawing.FontStyle.Bold)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.BunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.BunifuCustomDataGrid1.ColumnHeadersHeight = 41
         Me.BunifuCustomDataGrid1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column7, Me.Column8, Me.Column10, Me.Column11, Me.Column12, Me.Column13, Me.Column9, Me.Column14, Me.Column15})
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(244, Byte), Integer))
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.BunifuCustomDataGrid1.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(229, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(244, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.BunifuCustomDataGrid1.DefaultCellStyle = DataGridViewCellStyle3
         Me.BunifuCustomDataGrid1.DoubleBuffered = True
         Me.BunifuCustomDataGrid1.EnableHeadersVisualStyles = False
         Me.BunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(224, Byte), Integer))
@@ -298,7 +299,7 @@ Partial Class FormBarang
         Me.search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.search.ForeColor = System.Drawing.Color.Black
         Me.search.Icon = CType(resources.GetObject("search.Icon"), System.Drawing.Image)
-        Me.search.Location = New System.Drawing.Point(211, 148)
+        Me.search.Location = New System.Drawing.Point(211, 539)
         Me.search.Name = "search"
         Me.search.Size = New System.Drawing.Size(201, 32)
         Me.search.TabIndex = 29
@@ -368,7 +369,7 @@ Partial Class FormBarang
         Me.BunifuFlatButton2.IconVisible = True
         Me.BunifuFlatButton2.IconZoom = 55.0R
         Me.BunifuFlatButton2.IsTab = False
-        Me.BunifuFlatButton2.Location = New System.Drawing.Point(772, 132)
+        Me.BunifuFlatButton2.Location = New System.Drawing.Point(826, 132)
         Me.BunifuFlatButton2.Name = "BunifuFlatButton2"
         Me.BunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(166, Byte), Integer), CType(CType(90, Byte), Integer))
         Me.BunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(110, Byte), Integer), CType(CType(60, Byte), Integer))
@@ -402,7 +403,7 @@ Partial Class FormBarang
         Me.BunifuFlatButton1.IconVisible = True
         Me.BunifuFlatButton1.IconZoom = 90.0R
         Me.BunifuFlatButton1.IsTab = False
-        Me.BunifuFlatButton1.Location = New System.Drawing.Point(636, 132)
+        Me.BunifuFlatButton1.Location = New System.Drawing.Point(554, 132)
         Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
         Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(127, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.BunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(112, Byte), Integer))
@@ -421,7 +422,7 @@ Partial Class FormBarang
         Me.BunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(57, Byte), Integer))
         Me.BunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BunifuFlatButton3.BorderRadius = 0
-        Me.BunifuFlatButton3.ButtonText = ""
+        Me.BunifuFlatButton3.ButtonText = "List Barang"
         Me.BunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BunifuFlatButton3.DisabledColor = System.Drawing.Color.Gray
         Me.BunifuFlatButton3.Iconcolor = System.Drawing.Color.Transparent
@@ -436,17 +437,52 @@ Partial Class FormBarang
         Me.BunifuFlatButton3.IconVisible = True
         Me.BunifuFlatButton3.IconZoom = 80.0R
         Me.BunifuFlatButton3.IsTab = False
-        Me.BunifuFlatButton3.Location = New System.Drawing.Point(907, 132)
+        Me.BunifuFlatButton3.Location = New System.Drawing.Point(690, 529)
         Me.BunifuFlatButton3.Name = "BunifuFlatButton3"
         Me.BunifuFlatButton3.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(57, Byte), Integer))
         Me.BunifuFlatButton3.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(57, Byte), Integer))
         Me.BunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.White
         Me.BunifuFlatButton3.selected = False
-        Me.BunifuFlatButton3.Size = New System.Drawing.Size(49, 48)
+        Me.BunifuFlatButton3.Size = New System.Drawing.Size(130, 48)
         Me.BunifuFlatButton3.TabIndex = 50
+        Me.BunifuFlatButton3.Text = "List Barang"
         Me.BunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BunifuFlatButton3.Textcolor = System.Drawing.Color.White
         Me.BunifuFlatButton3.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
+        'BunifuFlatButton5
+        '
+        Me.BunifuFlatButton5.Activecolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.BunifuFlatButton5.BackColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(127, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.BunifuFlatButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuFlatButton5.BorderRadius = 0
+        Me.BunifuFlatButton5.ButtonText = "Update Harga"
+        Me.BunifuFlatButton5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuFlatButton5.DisabledColor = System.Drawing.Color.Gray
+        Me.BunifuFlatButton5.Iconcolor = System.Drawing.Color.Transparent
+        Me.BunifuFlatButton5.Iconimage = Global.AplikasiPenjualan.My.Resources.Resources.price_tag_usd_80px
+        Me.BunifuFlatButton5.Iconimage_right = Nothing
+        Me.BunifuFlatButton5.Iconimage_right_Selected = Nothing
+        Me.BunifuFlatButton5.Iconimage_Selected = Nothing
+        Me.BunifuFlatButton5.IconMarginLeft = 0
+        Me.BunifuFlatButton5.IconMarginRight = 0
+        Me.BunifuFlatButton5.IconRightVisible = True
+        Me.BunifuFlatButton5.IconRightZoom = 0.0R
+        Me.BunifuFlatButton5.IconVisible = True
+        Me.BunifuFlatButton5.IconZoom = 60.0R
+        Me.BunifuFlatButton5.IsTab = False
+        Me.BunifuFlatButton5.Location = New System.Drawing.Point(690, 132)
+        Me.BunifuFlatButton5.Name = "BunifuFlatButton5"
+        Me.BunifuFlatButton5.Normalcolor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(127, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.BunifuFlatButton5.OnHovercolor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.BunifuFlatButton5.OnHoverTextColor = System.Drawing.Color.White
+        Me.BunifuFlatButton5.selected = False
+        Me.BunifuFlatButton5.Size = New System.Drawing.Size(130, 48)
+        Me.BunifuFlatButton5.TabIndex = 52
+        Me.BunifuFlatButton5.Text = "Update Harga"
+        Me.BunifuFlatButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BunifuFlatButton5.Textcolor = System.Drawing.Color.White
+        Me.BunifuFlatButton5.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'FormBarang
         '
@@ -462,10 +498,11 @@ Partial Class FormBarang
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.idBarang)
-        Me.Controls.Add(Me.BunifuFlatButton4)
-        Me.Controls.Add(Me.BunifuFlatButton2)
         Me.Controls.Add(Me.BunifuFlatButton1)
+        Me.Controls.Add(Me.BunifuFlatButton2)
         Me.Controls.Add(Me.BunifuFlatButton3)
+        Me.Controls.Add(Me.BunifuFlatButton4)
+        Me.Controls.Add(Me.BunifuFlatButton5)
         Me.Controls.Add(Me.BunifuCustomDataGrid1)
         Me.Controls.Add(Me.ShapeContainer1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -508,4 +545,5 @@ Partial Class FormBarang
     Private WithEvents ShapeContainer1 As PowerPacks.ShapeContainer
     Private WithEvents LineShape1 As PowerPacks.LineShape
     Friend WithEvents BunifuFlatButton3 As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents BunifuFlatButton5 As Bunifu.Framework.UI.BunifuFlatButton
 End Class

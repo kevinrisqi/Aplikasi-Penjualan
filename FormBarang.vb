@@ -142,4 +142,8 @@ Public Class FormBarang
         switchPanel(ListBarang)
         Call ListBarang.listBarang()
     End Sub
+
+    Private Sub BunifuFlatButton5_Click(sender As Object, e As EventArgs) Handles BunifuFlatButton5.Click
+        switchPanel(UpdateHarga)
+    End Sub
 End Class
