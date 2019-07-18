@@ -103,6 +103,18 @@
     <Compile Include="B_FormLogin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="UpdateHargaBarang.Designer.vb">
+      <DependentUpon>UpdateHargaBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateHargaBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KoreksiBarang.Designer.vb">
+      <DependentUpon>KoreksiBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="KoreksiBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DetailBarang.Designer.vb">
       <DependentUpon>DetailBarang.vb</DependentUpon>
     </Compile>
@@ -157,6 +169,12 @@
     <Compile Include="FormUserlist.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="KoreksiStok.Designer.vb">
+      <DependentUpon>KoreksiStok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="KoreksiStok.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ListBarang.Designer.vb">
       <DependentUpon>ListBarang.vb</DependentUpon>
     </Compile>
@@ -209,10 +227,34 @@
       <DependentUpon>LaporanHarian.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="SalesReport.Designer.vb">
+      <DependentUpon>SalesReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TambahStok.Designer.vb">
+      <DependentUpon>TambahStok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TambahStok.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateHarga.Designer.vb">
+      <DependentUpon>UpdateHarga.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateHarga.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="B_FormLogin.resx">
       <DependentUpon>B_FormLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateHargaBarang.resx">
+      <DependentUpon>UpdateHargaBarang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KoreksiBarang.resx">
+      <DependentUpon>KoreksiBarang.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DetailBarang.resx">
       <DependentUpon>DetailBarang.vb</DependentUpon>
@@ -241,6 +283,9 @@
     <EmbeddedResource Include="FormUserlist.resx">
       <DependentUpon>FormUserlist.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="KoreksiStok.resx">
+      <DependentUpon>KoreksiStok.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ListBarang.resx">
       <DependentUpon>ListBarang.vb</DependentUpon>
     </EmbeddedResource>
@@ -268,6 +313,15 @@
     <EmbeddedResource Include="Reports\LaporanHarian.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>LaporanHarian.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesReport.resx">
+      <DependentUpon>SalesReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TambahStok.resx">
+      <DependentUpon>TambahStok.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateHarga.resx">
+      <DependentUpon>UpdateHarga.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -409,6 +463,15 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\create_new_128px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\price_tag_usd_80px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -35,6 +35,7 @@ Partial Class MainForm
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.sidebar = New Bunifu.Framework.UI.BunifuGradientPanel()
+        Me.btnKoreksi = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.lblLevel = New System.Windows.Forms.Label()
         Me.btnSetup = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.BunifuFlatButton11 = New Bunifu.Framework.UI.BunifuFlatButton()
@@ -168,7 +169,7 @@ Partial Class MainForm
         Me.footer.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(77, Byte), Integer), CType(CType(77, Byte), Integer))
         Me.footer.Controls.Add(Me.Label2)
         Me.footer.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.footer.Location = New System.Drawing.Point(306, 700)
+        Me.footer.Location = New System.Drawing.Point(306, 704)
         Me.footer.Name = "footer"
         Me.footer.Size = New System.Drawing.Size(1060, 30)
         Me.footer.TabIndex = 2
@@ -191,7 +192,7 @@ Partial Class MainForm
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(306, 54)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1060, 646)
+        Me.Panel1.Size = New System.Drawing.Size(1060, 650)
         Me.Panel1.TabIndex = 4
         '
         'Panel2
@@ -206,6 +207,7 @@ Partial Class MainForm
         '
         Me.sidebar.BackgroundImage = CType(resources.GetObject("sidebar.BackgroundImage"), System.Drawing.Image)
         Me.sidebar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.sidebar.Controls.Add(Me.btnKoreksi)
         Me.sidebar.Controls.Add(Me.lblLevel)
         Me.sidebar.Controls.Add(Me.btnSetup)
         Me.sidebar.Controls.Add(Me.BunifuFlatButton11)
@@ -229,8 +231,43 @@ Partial Class MainForm
         Me.sidebar.Location = New System.Drawing.Point(0, 0)
         Me.sidebar.Name = "sidebar"
         Me.sidebar.Quality = 10
-        Me.sidebar.Size = New System.Drawing.Size(306, 730)
+        Me.sidebar.Size = New System.Drawing.Size(306, 734)
         Me.sidebar.TabIndex = 0
+        '
+        'btnKoreksi
+        '
+        Me.btnKoreksi.Activecolor = System.Drawing.Color.Transparent
+        Me.btnKoreksi.BackColor = System.Drawing.Color.Transparent
+        Me.btnKoreksi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnKoreksi.BorderRadius = 0
+        Me.btnKoreksi.ButtonText = "   Koreksi Stok"
+        Me.btnKoreksi.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnKoreksi.DisabledColor = System.Drawing.Color.Transparent
+        Me.btnKoreksi.Enabled = False
+        Me.btnKoreksi.Iconcolor = System.Drawing.Color.Transparent
+        Me.btnKoreksi.Iconimage = Global.AplikasiPenjualan.My.Resources.Resources.create_new_128px
+        Me.btnKoreksi.Iconimage_right = Nothing
+        Me.btnKoreksi.Iconimage_right_Selected = Nothing
+        Me.btnKoreksi.Iconimage_Selected = Nothing
+        Me.btnKoreksi.IconMarginLeft = 0
+        Me.btnKoreksi.IconMarginRight = 0
+        Me.btnKoreksi.IconRightVisible = True
+        Me.btnKoreksi.IconRightZoom = 0.0R
+        Me.btnKoreksi.IconVisible = True
+        Me.btnKoreksi.IconZoom = 90.0R
+        Me.btnKoreksi.IsTab = False
+        Me.btnKoreksi.Location = New System.Drawing.Point(54, 446)
+        Me.btnKoreksi.Name = "btnKoreksi"
+        Me.btnKoreksi.Normalcolor = System.Drawing.Color.Transparent
+        Me.btnKoreksi.OnHovercolor = System.Drawing.Color.Blue
+        Me.btnKoreksi.OnHoverTextColor = System.Drawing.Color.White
+        Me.btnKoreksi.selected = False
+        Me.btnKoreksi.Size = New System.Drawing.Size(249, 48)
+        Me.btnKoreksi.TabIndex = 15
+        Me.btnKoreksi.Text = "   Koreksi Stok"
+        Me.btnKoreksi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnKoreksi.Textcolor = System.Drawing.Color.White
+        Me.btnKoreksi.TextFont = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'lblLevel
         '
@@ -238,7 +275,7 @@ Partial Class MainForm
         Me.lblLevel.BackColor = System.Drawing.Color.Transparent
         Me.lblLevel.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLevel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lblLevel.Location = New System.Drawing.Point(122, 205)
+        Me.lblLevel.Location = New System.Drawing.Point(123, 196)
         Me.lblLevel.Name = "lblLevel"
         Me.lblLevel.Size = New System.Drawing.Size(60, 21)
         Me.lblLevel.TabIndex = 13
@@ -267,7 +304,7 @@ Partial Class MainForm
         Me.btnSetup.IconVisible = True
         Me.btnSetup.IconZoom = 90.0R
         Me.btnSetup.IsTab = False
-        Me.btnSetup.Location = New System.Drawing.Point(54, 649)
+        Me.btnSetup.Location = New System.Drawing.Point(54, 681)
         Me.btnSetup.Name = "btnSetup"
         Me.btnSetup.Normalcolor = System.Drawing.Color.Transparent
         Me.btnSetup.OnHovercolor = System.Drawing.Color.Blue
@@ -301,7 +338,7 @@ Partial Class MainForm
         Me.BunifuFlatButton11.IconVisible = True
         Me.BunifuFlatButton11.IconZoom = 90.0R
         Me.BunifuFlatButton11.IsTab = False
-        Me.BunifuFlatButton11.Location = New System.Drawing.Point(0, 622)
+        Me.BunifuFlatButton11.Location = New System.Drawing.Point(0, 654)
         Me.BunifuFlatButton11.Name = "BunifuFlatButton11"
         Me.BunifuFlatButton11.Normalcolor = System.Drawing.Color.Navy
         Me.BunifuFlatButton11.OnHovercolor = System.Drawing.Color.Navy
@@ -336,7 +373,7 @@ Partial Class MainForm
         Me.btnLaporan.IconVisible = True
         Me.btnLaporan.IconZoom = 90.0R
         Me.btnLaporan.IsTab = False
-        Me.btnLaporan.Location = New System.Drawing.Point(54, 572)
+        Me.btnLaporan.Location = New System.Drawing.Point(54, 604)
         Me.btnLaporan.Name = "btnLaporan"
         Me.btnLaporan.Normalcolor = System.Drawing.Color.Transparent
         Me.btnLaporan.OnHovercolor = System.Drawing.Color.Blue
@@ -370,7 +407,7 @@ Partial Class MainForm
         Me.BunifuFlatButton9.IconVisible = True
         Me.BunifuFlatButton9.IconZoom = 90.0R
         Me.BunifuFlatButton9.IsTab = False
-        Me.BunifuFlatButton9.Location = New System.Drawing.Point(0, 545)
+        Me.BunifuFlatButton9.Location = New System.Drawing.Point(0, 577)
         Me.BunifuFlatButton9.Name = "BunifuFlatButton9"
         Me.BunifuFlatButton9.Normalcolor = System.Drawing.Color.Navy
         Me.BunifuFlatButton9.OnHovercolor = System.Drawing.Color.Navy
@@ -405,7 +442,7 @@ Partial Class MainForm
         Me.btnPenjualan.IconVisible = True
         Me.btnPenjualan.IconZoom = 90.0R
         Me.btnPenjualan.IsTab = False
-        Me.btnPenjualan.Location = New System.Drawing.Point(54, 494)
+        Me.btnPenjualan.Location = New System.Drawing.Point(54, 526)
         Me.btnPenjualan.Name = "btnPenjualan"
         Me.btnPenjualan.Normalcolor = System.Drawing.Color.Transparent
         Me.btnPenjualan.OnHovercolor = System.Drawing.Color.Blue
@@ -439,7 +476,7 @@ Partial Class MainForm
         Me.BunifuFlatButton8.IconVisible = True
         Me.BunifuFlatButton8.IconZoom = 90.0R
         Me.BunifuFlatButton8.IsTab = False
-        Me.BunifuFlatButton8.Location = New System.Drawing.Point(0, 467)
+        Me.BunifuFlatButton8.Location = New System.Drawing.Point(0, 499)
         Me.BunifuFlatButton8.Name = "BunifuFlatButton8"
         Me.BunifuFlatButton8.Normalcolor = System.Drawing.Color.Navy
         Me.BunifuFlatButton8.OnHovercolor = System.Drawing.Color.Navy
@@ -474,7 +511,7 @@ Partial Class MainForm
         Me.btnDashboard.IconVisible = True
         Me.btnDashboard.IconZoom = 90.0R
         Me.btnDashboard.IsTab = False
-        Me.btnDashboard.Location = New System.Drawing.Point(54, 284)
+        Me.btnDashboard.Location = New System.Drawing.Point(54, 260)
         Me.btnDashboard.Name = "btnDashboard"
         Me.btnDashboard.Normalcolor = System.Drawing.Color.Transparent
         Me.btnDashboard.OnHovercolor = System.Drawing.Color.Blue
@@ -508,7 +545,7 @@ Partial Class MainForm
         Me.BunifuFlatButton5.IconVisible = True
         Me.BunifuFlatButton5.IconZoom = 90.0R
         Me.BunifuFlatButton5.IsTab = False
-        Me.BunifuFlatButton5.Location = New System.Drawing.Point(0, 257)
+        Me.BunifuFlatButton5.Location = New System.Drawing.Point(0, 233)
         Me.BunifuFlatButton5.Name = "BunifuFlatButton5"
         Me.BunifuFlatButton5.Normalcolor = System.Drawing.Color.Navy
         Me.BunifuFlatButton5.OnHovercolor = System.Drawing.Color.Navy
@@ -524,10 +561,12 @@ Partial Class MainForm
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.PictureBox1.Image = Global.AplikasiPenjualan.My.Resources.Resources.find_user
-        Me.PictureBox1.Location = New System.Drawing.Point(89, 65)
+        Me.PictureBox1.Location = New System.Drawing.Point(97, 74)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(131, 126)
+        Me.PictureBox1.Size = New System.Drawing.Size(111, 106)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 4
         Me.PictureBox1.TabStop = False
         '
@@ -553,7 +592,7 @@ Partial Class MainForm
         Me.btnUser.IconVisible = True
         Me.btnUser.IconZoom = 90.0R
         Me.btnUser.IsTab = False
-        Me.btnUser.Location = New System.Drawing.Point(54, 416)
+        Me.btnUser.Location = New System.Drawing.Point(54, 392)
         Me.btnUser.Name = "btnUser"
         Me.btnUser.Normalcolor = System.Drawing.Color.Transparent
         Me.btnUser.OnHovercolor = System.Drawing.Color.Blue
@@ -588,7 +627,7 @@ Partial Class MainForm
         Me.btnBarang.IconVisible = True
         Me.btnBarang.IconZoom = 90.0R
         Me.btnBarang.IsTab = False
-        Me.btnBarang.Location = New System.Drawing.Point(54, 362)
+        Me.btnBarang.Location = New System.Drawing.Point(54, 338)
         Me.btnBarang.Name = "btnBarang"
         Me.btnBarang.Normalcolor = System.Drawing.Color.Transparent
         Me.btnBarang.OnHovercolor = System.Drawing.Color.Blue
@@ -622,7 +661,7 @@ Partial Class MainForm
         Me.BunifuFlatButton1.IconVisible = True
         Me.BunifuFlatButton1.IconZoom = 90.0R
         Me.BunifuFlatButton1.IsTab = False
-        Me.BunifuFlatButton1.Location = New System.Drawing.Point(0, 335)
+        Me.BunifuFlatButton1.Location = New System.Drawing.Point(0, 312)
         Me.BunifuFlatButton1.Name = "BunifuFlatButton1"
         Me.BunifuFlatButton1.Normalcolor = System.Drawing.Color.Navy
         Me.BunifuFlatButton1.OnHovercolor = System.Drawing.Color.Navy
@@ -725,7 +764,7 @@ Partial Class MainForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1366, 730)
+        Me.ClientSize = New System.Drawing.Size(1366, 734)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.footer)
         Me.Controls.Add(Me.header)
@@ -785,4 +824,5 @@ Partial Class MainForm
     Friend WithEvents PenjualanToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents DashboardToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents lblIdAdmin As System.Windows.Forms.Label
+    Friend WithEvents btnKoreksi As Bunifu.Framework.UI.BunifuFlatButton
 End Class

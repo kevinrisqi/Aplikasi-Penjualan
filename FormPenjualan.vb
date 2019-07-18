@@ -251,4 +251,8 @@ Public Class FormPenjualan
     Private Sub namaKasir_TextChanged(sender As Object, e As EventArgs) Handles namaKasir.TextChanged
 
     End Sub
+
+    Private Sub kodeBarang_TextChanged(sender As Object, e As EventArgs) Handles kodeBarang.TextChanged
+
+    End Sub
 End Class

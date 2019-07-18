@@ -42,7 +42,7 @@ Public Class FormAddBarang
     End Sub
 
     Private Sub kodeBarang_KeyPress(sender As Object, e As KeyPressEventArgs) Handles kodeBarang.KeyPress
-        If kodeBarang.Text.Length >= 6 Then
+        If kodeBarang.Text.Length >= 10 Then
             If e.KeyChar <> ControlChars.Back Then
                 e.Handled = True
             End If
@@ -66,7 +66,12 @@ Public Class FormAddBarang
     End Sub
 
     Private Sub stokMax_KeyPress(sender As Object, e As KeyPressEventArgs) Handles stok.KeyPress
-        If Not ((e.KeyChar >= "0" And e.KeyChar <= "9") Or e.KeyChar = vbBack) Then e.Handled = True
+        If Not ((e.KeyChar >= "0" And e.KeyChar <= "9") Or e.KeyChar = vbBack) Then
+            e.Handled = True
+        End If
+        If Not id.Text = "" Then
+            e.Handled = True
+        End If
     End Sub
 
     Private Sub beliMax_KeyPress(sender As Object, e As KeyPressEventArgs) Handles beli.KeyPress
@@ -74,6 +79,9 @@ Public Class FormAddBarang
             If e.KeyChar <> ControlChars.Back Then
                 e.Handled = True
             End If
+        End If
+        If Not id.Text = "" Then
+            e.Handled = True
         End If
     End Sub
 
@@ -86,6 +94,9 @@ Public Class FormAddBarang
             If e.KeyChar <> ControlChars.Back Then
                 e.Handled = True
             End If
+        End If
+        If Not id.Text = "" Then
+            e.Handled = True
         End If
     End Sub
 
@@ -194,5 +205,10 @@ Public Class FormAddBarang
     Private Sub cancel_Click(sender As Object, e As EventArgs) Handles cancel.Click
         switchPanel(FormBarang)
         Call kondisiAwal()
+        'Me.Close()
+    End Sub
+
+    Private Sub stok_OnValueChanged(sender As Object, e As EventArgs) Handles stok.OnValueChanged
+
     End Sub
 End Class
